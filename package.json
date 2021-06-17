@@ -1,0 +1,26 @@
+{
+  "name": "medical-supply",
+  "version": "1.0.0",
+  "description": "An app to handle medical supply distribution.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephmartin721/Medical-Supply.git"
+  },
+  "author": "Angela Rubio, Hagen DeRouen, Leticia Mendiola and Joseph Martin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josephmartin721/Medical-Supply/issues"
+  },
+  "homepage": "https://github.com/josephmartin721/Medical-Supply#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.12.14",
+    "react": "^17.0.2"
+  }
+}
