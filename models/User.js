@@ -12,7 +12,8 @@ const userSchema = Schema({
         minLength: 6
     },
     name: {
-        type: Mixed
+        first: { type: String },
+        last: { type: String }
     },
     role: {
         type: String,

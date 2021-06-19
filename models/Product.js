@@ -2,6 +2,11 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const productSchema = new Schema({
+    shop: {
+        type: Schema.Types.ObjectId,
+        ref: "Shop",
+        required: true
+    },
     sku: {
         type: String,
         required: true
@@ -14,8 +19,7 @@ const productSchema = new Schema({
         required: true
     },
     slug: {
-        type: String,
-        required: true
+        type: String
     },
     description: {
         type: String
@@ -23,8 +27,8 @@ const productSchema = new Schema({
     medicalSpecialtyDescription: {
         type: String
     },
-    image: {
-        type: String
+    images: {
+        type: [{ type: String }]
     },
     usage: {
         type: String
@@ -39,10 +43,12 @@ const productSchema = new Schema({
         type: String
     },
     openFda: {
-        type: Mixed
+        kNumber: [{ type: String }],
+        registrationNumber: [{ type: String}],
+        feiNumber: [{ type: String }]
     },
     regulationNumber: {
-        type: Array
+        type: [{ type: String }]
     }
 });
 
