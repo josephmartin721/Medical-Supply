@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Products from './pages/Products';
 import Contact from './pages/Contact';
+import M from 'materialize-css'
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
