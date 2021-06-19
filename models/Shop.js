@@ -4,16 +4,19 @@ const Schema = mongoose.Schema;
 const shopSchema = new Schema({
     name: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     slug: {
         type: String,
         required: true,
-        unique: true
     },
     address: {
-        type: Object,
-        required: true
+        country: { type: String },
+        address: { type: String },
+        city: { type: String },
+        state: { type: String },
+        zip: { type: String }
     },
     phone: {
         type: String
