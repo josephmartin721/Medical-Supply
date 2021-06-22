@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+const { nanoid } = require("nanoid");
 
 const productSchema = new Schema({
     shop: {
@@ -9,7 +10,7 @@ const productSchema = new Schema({
     },
     sku: {
         type: String,
-        required: true
+        default: () => nanoid()
     },
     code: {
         type: String
@@ -19,7 +20,8 @@ const productSchema = new Schema({
         required: true
     },
     slug: {
-        type: String
+        type: String,
+        required: true
     },
     description: {
         type: String
@@ -44,13 +46,15 @@ const productSchema = new Schema({
     },
     openFda: {
         kNumber: [{ type: String }],
-        registrationNumber: [{ type: String}],
+        registrationNumber: [{ type: String }],
         feiNumber: [{ type: String }]
     },
     regulationNumber: {
         type: [{ type: String }]
     }
 });
+
+// TODO: middleware to update Shop products on creation and deletion
 
 const Product = mongoose.model("Product", productSchema);
 
