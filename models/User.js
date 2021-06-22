@@ -19,16 +19,16 @@ const userSchema = Schema({
         type: String,
         required: true
     },
-    mobilePhone: {
+    cell: {
         type: String,
-        match: /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/
     },
-    businessPhone: {
+    phone: {
         type: String,
-        match: /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/
     },
-    profileImage: {
-        type: String
+    picture: {
+        large: { type: String },
+        medium: { type: String },
+        thumbnail: { type: String }
     }
 });
 

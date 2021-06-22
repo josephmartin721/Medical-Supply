@@ -10,7 +10,9 @@
     "client": "cd client && npm run start",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "seed": "node ./utils/seed.js",
+    "server": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -24,9 +26,11 @@
   "homepage": "https://github.com/josephmartin721/Medical-Supply#readme",
   "dependencies": {
     "axios": "^0.21.1",
+    "chalk": "^4.1.1",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
     "mongoose": "^5.12.14",
+    "nanoid": "^3.1.23",
     "react": "^17.0.2"
   },
   "devDependencies": {
