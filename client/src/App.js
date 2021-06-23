@@ -27,8 +27,8 @@ function App() {
         <Route exact path="/products">
           <Products/>
         </Route>
-        <Route>
-
+        <Route exact path="/products/:id">
+          {/* Individual Product Page will go here */}
         </Route>
         <Route exact path="/contact">
           <Contact/>
