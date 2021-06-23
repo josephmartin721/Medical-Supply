@@ -19,8 +19,8 @@ function HomeHeader() {
             </Col>
             </Row>
             <Row>
-                <img src={logo} alt="logo" />
-                <img src={tech} alt="tech" />
+                <img style={{marginLeft: "20px"}} src={logo} alt="logo" />
+                <img style={{marginLeft: "20px"}} src={tech} alt="tech" />
             </Row>
         </Col>
     );
