@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../logo.png";
+import Background from "../../06.png";
 
 function HomeHeader() {
     return (
