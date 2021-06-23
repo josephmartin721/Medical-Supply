@@ -9,7 +9,7 @@ function HomeHeader() {
             <img className="col-4 img-fluid rounded-circle" alt="profile pic" src={logo}/>
             <div className="col-2"></div> 
             <div className="col-3 card-content">
-                <h1 className="text-white">Contact Information</h1>
+                <h1 className="text-white">Procession in the Evolution of ENT Technology</h1>
             </div>
             <div className="col-1"></div>
         </div>
