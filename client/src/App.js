@@ -7,7 +7,6 @@ import Products from './pages/Products';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import NoMatch from "./pages/NoMatch";
-import M from 'materialize-css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
