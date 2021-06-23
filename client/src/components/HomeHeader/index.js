@@ -10,16 +10,14 @@ function HomeHeader() {
         xl={12}
         s={12}>
             <Row>
-                <Col s={4}>
-                <img style={{marginTop: "75px"}} alt="logo" src={logo}/>
-                </Col>
-                <Col s={4}></Col> 
-            <Col s={4} className="white-text">
+            <Col s={8} style={{width: "65%"}}>
+               
+            </Col> 
+            <Col s={4} style={{width: "35%"}} className="white-text">
                 <h4 style={{marginTop: "75px"}}>Procession in the Evolution of ENT Technology</h4>
             </Col>
             </Row>
         </Col>
-        
     );
 }
 
