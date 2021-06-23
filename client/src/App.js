@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-// import logo from './logo.svg';
-import React from 'react';
->>>>>>> f2a876757a917e62148556cc7cb2225fd7b018ca
 import './App.css';
 import Home from './pages/Home';
 import Login from './pages/Login';
