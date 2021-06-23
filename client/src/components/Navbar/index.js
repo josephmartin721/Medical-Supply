@@ -33,6 +33,7 @@ function Navbar() {
           <Button
           node="button"
           waves="light"
+          style={{marginLeft: "20px"}}
           >
             <Link
               to="/Products"
@@ -46,6 +47,7 @@ function Navbar() {
           <Button
           node="button"
           waves="light"
+          style={{marginLeft: "20px"}}
           >
             <Link
               to="/Contact"
@@ -59,6 +61,7 @@ function Navbar() {
           <Button
           node="button"
           waves="light"
+          style={{marginLeft: "20px"}}
           >
             <Link
               to="/Login"
