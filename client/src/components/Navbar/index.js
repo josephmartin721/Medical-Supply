@@ -5,12 +5,12 @@ import { Button } from "react-materialize";
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav style={{backgroundColor: "#260688"}} className="navbar navbar-expand-lg navbar-light bg-light">
       <Link className="navbar-brand" to="/">
         Company Name Here
       </Link>
       <div>
-        <ul className="navbar-nav">
+        <ul style={{backgroundColor: "#260688"}} className="navbar-nav">
           <li className="nav-item">
             <Link
               to="/"
@@ -43,6 +43,7 @@ function Navbar() {
           <Button
           node="button"
           waves="light"
+          align="right"
           >
             <Link
               to="/Login"
