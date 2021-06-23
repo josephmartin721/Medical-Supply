@@ -1,8 +1,13 @@
-import React from "react"
-import M from 'materialize-css'
+import React from "react";
+import Jumbotron from "../components/Jumbotron";
+import M from 'materialize-css';
 
-function Home() {
+const Home = () => {
+    return(
+        <Jumbotron>
 
-}
+        </Jumbotron>
+    );
+};
 
-export default Home
+export default Home;
