@@ -12,6 +12,11 @@ function Navbar() {
       <div>
         <ul className="navbar-nav">
           <li className="nav-item">
+          <Button
+          node="button"
+          waves="light"
+          style={{marginLeft: "20px"}}
+          >
             <Link
               to="/"
               className={
@@ -22,28 +27,38 @@ function Navbar() {
             >
               Home
             </Link>
+          </Button>
           </li>
           <li className="nav-item">
+          <Button
+          node="button"
+          waves="light"
+          >
             <Link
               to="/Products"
               className={window.location.pathname === "/Products" ? "nav-link active" : "nav-link"}
             >
               Products
             </Link>
+          </Button>
           </li>
           <li className="nav-item">
+          <Button
+          node="button"
+          waves="light"
+          >
             <Link
               to="/Contact"
               className={window.location.pathname === "/Contact" ? "nav-link active" : "nav-link"}
             >
               Contact Us
             </Link>
+          </Button>
           </li>
           <li className="nav-item">
           <Button
           node="button"
           waves="light"
-          style={{alignSelf: "right"}}
           >
             <Link
               to="/Login"
