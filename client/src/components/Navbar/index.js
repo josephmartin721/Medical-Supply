@@ -10,7 +10,7 @@ function Navbar() {
         Company Name Here
       </Link>
       <div>
-        <ul style={{backgroundColor: "#260688"}} className="navbar-nav">
+        <ul className="navbar-nav">
           <li className="nav-item">
             <Link
               to="/"
@@ -43,7 +43,7 @@ function Navbar() {
           <Button
           node="button"
           waves="light"
-          align="right"
+          style={{alignSelf: "right"}}
           >
             <Link
               to="/Login"
