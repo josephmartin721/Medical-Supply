@@ -7,7 +7,6 @@ function HomeHeader() {
     return (
         <Col 
         style={{width: "100%", backgroundImage: `url(${Background})`}} 
-        className="container align-items-center row z-depth-5"
         xl={12}
         s={12}>
             <Row>
