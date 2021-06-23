@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Button } from "react-materialize";
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Navbar() {
@@ -39,12 +40,17 @@ function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
+          <Button
+          node="button"
+          waves="light"
+          >
             <Link
               to="/Login"
               className={window.location.pathname === "/Login" ? "nav-link active" : "nav-link"}
             >
               Login/Signup
             </Link>
+          </Button>
           </li>
         </ul>
       </div>

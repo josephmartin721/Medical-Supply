@@ -11,11 +11,11 @@ function HomeHeader() {
         s={12}>
             <Row>
                 <Col s={4}>
-                <img s={4} className="col-4 img-fluid rounded-circle" alt="profile pic" src={logo}/>
+                <img alt="profile pic" src={logo}/>
                 </Col>
                 <Col s={4}></Col> 
-            <Col s={4} className="col-4 white-text">
-                <h4>Procession in the Evolution of ENT Technology</h4>
+            <Col s={4} className="white-text">
+                <h4 style={{marginTop: "75px"}}>Procession in the Evolution of ENT Technology</h4>
             </Col>
             </Row>
         </Col>
