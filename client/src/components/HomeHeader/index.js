@@ -11,7 +11,7 @@ function HomeHeader() {
         s={12}>
             <Row>
                 <Col s={4}>
-                <img alt="profile pic" src={logo}/>
+                <img style={{marginTop: "75px"}} alt="logo" src={logo}/>
                 </Col>
                 <Col s={4}></Col> 
             <Col s={4} className="white-text">
