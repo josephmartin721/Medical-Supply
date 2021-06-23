@@ -14,11 +14,27 @@ function App() {
     <Router>
       <div>
       <Navbar />
-      <Route exact path="/" component={Home} />
-      <Route exact path="/login" component={Login} />
-      <Route exact path="/register" component={Register} />
-      <Route exact path="/products" component={Products} />
-      <Route exact path="/contact" component={Contact} />
+      <Switch>
+        <Route exact path="/" component={Home} />
+      </Switch>
+      <Switch>
+        <Route exact path="/login" component={Login} />
+      </Switch>
+      <Switch>
+        <Route exact path="/register" component={Register} />
+      </Switch>
+      <Switch>
+        <Route exact path="/products" component={Products} />
+      </Switch>
+      <Switch>
+        
+      </Switch>
+      <Switch>
+        <Route exact path="/contact" component={Contact} />
+      </Switch>
+      <Switch>
+        
+      </Switch>
       </div>
     </Router>
   );
