@@ -1,21 +1,14 @@
 import React from "react";
-import pic from "../ProfilePic.jpg";
+import logo from "../../logo.png";
 
 function HomeHeader() {
     return (
-        <div style={{marginTop: "70px"}} className="container align-items-center row z-depth-5">
+        <div style={{backgroundImage: `url(${Background})`}} className="container align-items-center row z-depth-5">
             <div className="col-2"></div>
-            <img className="col-4 img-fluid rounded-circle" alt="profile pic" src={pic}/>
+            <img className="col-4 img-fluid rounded-circle" alt="profile pic" src={logo}/>
             <div className="col-2"></div> 
             <div className="col-3 card-content">
-                <h4 className="text-white">Contact Information</h4>
-                <br></br>
-                <h6 className="text-white">Phone:</h6>
-                <br></br>
-                <h6 className="text-white">210-608-5800</h6>
-                <br></br>
-                <h6 className="text-white">Email:</h6>
-                <h6 className="text-white">lmendiola509@gmail.com</h6>
+                <h1 className="text-white">Contact Information</h1>
             </div>
             <div className="col-1"></div>
         </div>
