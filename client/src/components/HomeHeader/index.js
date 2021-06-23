@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../logo.png";
-import Background from "../../06.png";
+import Background from "../../background.png";
 import { Row, Col } from "react-materialize";
 
 function HomeHeader() {
