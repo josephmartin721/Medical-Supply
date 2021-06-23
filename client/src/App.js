@@ -5,8 +5,9 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Products from './pages/Products';
 import Contact from './pages/Contact';
-import Navbar from './components/Navbar'
-import M from 'materialize-css'
+import Navbar from './components/Navbar';
+import NoMatch from "./pages/NoMatch";
+import M from 'materialize-css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
           <Contact/>
         </Route>
         <Route>
-
+          <NoMatch/>
         </Route>
       </Switch>
       </div>
