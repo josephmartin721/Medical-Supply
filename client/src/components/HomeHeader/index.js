@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../logo.png";
+import tech from "../../06.png";
 import Background from "../../background.png";
 import { Row, Col } from "react-materialize";
 
@@ -16,6 +17,10 @@ function HomeHeader() {
             <Col s={4} style={{width: "35%"}} className="white-text">
                 <h4 style={{marginTop: "75px"}}>Procession in the Evolution of ENT Technology</h4>
             </Col>
+            </Row>
+            <Row>
+                <img src={logo} alt="logo" />
+                <img src={tech} alt="tech" />
             </Row>
         </Col>
     );
