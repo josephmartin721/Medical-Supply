@@ -7,9 +7,9 @@ const Home = () => {
     return(
     <div>
         <HomeHeader />
-        <Jumbotron />
-        <Jumbotron />
-        <Jumbotron />
+        {homedata.map(data => (
+            <Jumbotron />
+        ))}
     </div>
     );
 };
