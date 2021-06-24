@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col, Card, Icon } from "react-materialize";
 import HomeHeader from "../components/HomeHeader";
 import logo from "../logo.png";
+import background from "../background.png"
 // import Jumbotron from "../components/Jumbotron";
 // import homedata from "./homedata.json";
 
@@ -10,7 +11,7 @@ const Home = () => {
     <div>
     <HomeHeader />
     <div>
-    <Row>
+    <Row style={{backgroundImage: `url(${background})`}}>
         <Col m={4} s={4}>
             <Card 
             className="blue-grey darken-1"
