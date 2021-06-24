@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Card, Icon } from "react-materialize";
+import { Row, Col, Card, Icon } from "react-materialize";
 import HomeHeader from "../components/HomeHeader";
 import logo from "../logo.png";
 // import Jumbotron from "../components/Jumbotron";
@@ -10,7 +10,8 @@ const Home = () => {
     <div>
     <HomeHeader />
     <div>
-        <Col>
+    <Row>
+        <Col m={4} s={4}>
             <Card 
             className="blue-grey darken-1"
             closeIcon={<Icon>close</Icon>}
@@ -19,10 +20,10 @@ const Home = () => {
             title="WITTY CATCH PHRASE HERE!!!!!!!!!!!!!!!!!!!!!!!!!">
             </Card>
         </Col>
-        <Col>
+        <Col m={4} s={4}>
             <img src={logo} alt="logo"/>
         </Col>
-        <Col>
+        <Col  m={4} s={4}>
         <Card
         actions={[
             <a key="1" href="#">Products</a>
@@ -34,6 +35,7 @@ const Home = () => {
         title="Browse Our Products Here">
         </Card>
         </Col>
+    </Row>
     </div>
     </div>
     );
