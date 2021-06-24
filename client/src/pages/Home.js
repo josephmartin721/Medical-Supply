@@ -12,7 +12,7 @@ const Home = () => {
     <HomeHeader />
     <div>
     <Row style={{backgroundImage: `url(${background})`}}>
-        <Col m={4} s={4}>
+        <Col m={4} s={4} className="center">
             <Card 
             className="blue-grey darken-1"
             closeIcon={<Icon>close</Icon>}
@@ -24,7 +24,7 @@ const Home = () => {
         <Col className="center" m={4} s={4}>
             <img src={logo} alt="logo"/>
         </Col>
-        <Col  m={4} s={4}>
+        <Col  m={4} s={4} className="center">
         <Card
         actions={[
             <a key="1" href="#">Products</a>
