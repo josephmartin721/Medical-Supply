@@ -16,8 +16,7 @@ const Home = () => {
             closeIcon={<Icon>close</Icon>}
             revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
-            title="Card title">
-                WITTY CATCH PHRASE HERE!!!!!!!!!!!!!!!!!!!!!!!!!
+            title="WITTY CATCH PHRASE HERE!!!!!!!!!!!!!!!!!!!!!!!!!">
             </Card>
         </Col>
         <Col>
@@ -26,14 +25,13 @@ const Home = () => {
         <Col>
         <Card
         actions={[
-            <a key="1" href="#">This is a link</a>
+            <a key="1" href="#">Products</a>
             ]}
         className="blue-grey darken-1"
         closeIcon={<Icon>close</Icon>}
         revealIcon={<Icon>more_vert</Icon>}
         textClassName="white-text"
-        title="Card title">
-            Browse Our Products Here
+        title="Browse Our Products Here">
         </Card>
         </Col>
     </div>
