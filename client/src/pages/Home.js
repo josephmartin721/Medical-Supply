@@ -1,5 +1,5 @@
 import React from "react";
-import { Col } from "react-materialize";
+import { Col, Card } from "react-materialize";
 import HomeHeader from "../components/HomeHeader";
 import logo from "../logo.png";
 // import Jumbotron from "../components/Jumbotron";
@@ -13,6 +13,9 @@ const Home = () => {
             <Col>
                 <img src={logo} alt="logo"/>
             </Col>
+            <Card>
+                
+            </Card>
         </div>
     </div>
     );
