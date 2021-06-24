@@ -14,7 +14,7 @@ const Home = () => {
     <Row style={{marginTop: "5px", backgroundImage: `url(${background})`}}>
         <Col m={4} s={4} className="center">
             <Card
-            style={{marginTop: "75px"}} 
+            style={{marginTop: "100px"}} 
             className="blue-grey darken-1"
             closeIcon={<Icon>close</Icon>}
             revealIcon={<Icon>more_vert</Icon>}
@@ -23,11 +23,11 @@ const Home = () => {
             </Card>
         </Col>
         <Col className="center" m={4} s={4}>
-            <img src={logo} alt="logo"/>
+            <img style={{marginTop: "50px", marginBottom: "50px"}} src={logo} alt="logo"/>
         </Col>
         <Col  m={4} s={4} className="center">
         <Card
-        style={{marginTop: "75px"}} 
+        style={{marginTop: "100px"}} 
         actions={[
             <a key="1" href="#">Products</a>
             ]}
