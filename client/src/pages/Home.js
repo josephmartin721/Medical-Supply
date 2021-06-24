@@ -1,17 +1,15 @@
 import React from "react";
 import Jumbotron from "../components/Jumbotron";
-import Navbar from "../components/Navbar";
-import M from 'materialize-css';
+import HomeHeader from "../components/HomeHeader";
 
 const Home = () => {
     return(
-        <div>
-        <Navbar />
+    <div>
+        <HomeHeader />
         <Jumbotron />
         <Jumbotron />
         <Jumbotron />
-        
-        </div>
+    </div>
     );
 };
 
