@@ -1,6 +1,7 @@
 import React from "react";
 import { Col } from "react-materialize";
 import HomeHeader from "../components/HomeHeader";
+import logo from "../logo.png";
 // import Jumbotron from "../components/Jumbotron";
 // import homedata from "./homedata.json";
 
@@ -10,7 +11,7 @@ const Home = () => {
         <HomeHeader />
         <div>
             <Col>
-                <img src={} alt="logo"/>
+                <img src={logo} alt="logo"/>
             </Col>
         </div>
     </div>
