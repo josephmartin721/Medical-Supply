@@ -1,7 +1,7 @@
 const router = require("express").Router();
-const medRoutes = require("./med");
+const medRoutes = require("./api");
 
 // Med routes
-router.use("/med", medRoutes);
+router.use("/api", medRoutes);
 
 module.exports = router;
