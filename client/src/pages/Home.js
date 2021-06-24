@@ -20,7 +20,7 @@ const Home = () => {
             title="WITTY CATCH PHRASE HERE!!!!!!!!!!!!!!!!!!!!!!!!!">
             </Card>
         </Col>
-        <Col m={4} s={4}>
+        <Col className="center" m={4} s={4}>
             <img src={logo} alt="logo"/>
         </Col>
         <Col  m={4} s={4}>
