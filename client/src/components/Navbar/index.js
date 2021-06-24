@@ -15,6 +15,7 @@ function Navbar() {
           <Button
           node="button"
           waves="light"
+          className="indigo"
           style={{marginLeft: "20px"}}
           >
             <Link
@@ -33,6 +34,7 @@ function Navbar() {
           <Button
           node="button"
           waves="light"
+          className="indigo"
           style={{marginLeft: "20px"}}
           >
             <Link
@@ -47,6 +49,7 @@ function Navbar() {
           <Button
           node="button"
           waves="light"
+          className="indigo"
           style={{marginLeft: "20px"}}
           >
             <Link
@@ -61,6 +64,7 @@ function Navbar() {
           <Button
           node="button"
           waves="light"
+          className="indigo"
           style={{marginLeft: "20px"}}
           >
             <Link
