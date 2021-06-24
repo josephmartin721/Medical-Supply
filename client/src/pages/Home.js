@@ -11,9 +11,10 @@ const Home = () => {
     <div>
     <HomeHeader />
     <div>
-    <Row style={{backgroundImage: `url(${background})`}}>
+    <Row style={{marginTop: "5px", backgroundImage: `url(${background})`}}>
         <Col m={4} s={4} className="center">
-            <Card 
+            <Card
+            style={{marginTop: "75px"}} 
             className="blue-grey darken-1"
             closeIcon={<Icon>close</Icon>}
             revealIcon={<Icon>more_vert</Icon>}
@@ -26,6 +27,7 @@ const Home = () => {
         </Col>
         <Col  m={4} s={4} className="center">
         <Card
+        style={{marginTop: "75px"}} 
         actions={[
             <a key="1" href="#">Products</a>
             ]}
