@@ -4,8 +4,6 @@ import HomeHeader from "../components/HomeHeader";
 import Jumbotron from "../components/Jumbotron";
 import logo from "../images/logo.png";
 import background from "../images/background.png"
-// import Jumbotron from "../components/Jumbotron";
-// import homedata from "./homedata.json";
 
 const Home = () => {
     return(
@@ -25,7 +23,11 @@ const Home = () => {
                 </Card>
             </Col>
             <Col className="center" m={4} s={4}>
-                <img style={{marginTop: "50px", marginBottom: "50px", maxWidth:"100%", height:"auto"}} src={logo} alt="logo"/>
+                <img 
+                style={{marginTop: "50px", marginBottom: "50px", maxWidth:"100%", height:"auto"}} 
+                src={logo} 
+                alt="logo"
+                />
             </Col>
             <Col  m={4} s={4} className="center">
             <Card
