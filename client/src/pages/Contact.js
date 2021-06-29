@@ -1,20 +1,28 @@
 import React from "react";
-import { Row, Col, Card, Icon } from "react-materialize";
+import { Row, Col, Card, Icon, Parallax } from "react-materialize";
 import tech from "../images/06.png";
 
 const Contact = () => {
     return(
-        <Row>
+        <div>
+        <Parallax
+            style={{marginTop:"75px"}}
+            image={<img alt="" src="http://materializecss.com/images/parallax1.jpg"/>}
+            options={{
+                responsiveThreshold: 0
+            }}
+        />
+        <Row className="section white">
             <Col s={7}>
             <img 
-                style={{float:"right", marginTop: "50px", marginBottom: "50px", maxWidth:"100%", height:"auto", borderRadius:50}} 
+                style={{float:"right", marginTop:5, marginBottom:5, maxWidth:"100%", height:"auto", borderRadius:50}} 
                 src={tech}
                 alt="tech"
                 />
             </Col>
             <Col s={5}>
                 <Card
-                style={{float:"left", marginTop: "50px", marginBottom: "50px", marginLeft:"10%", borderRadius:50}} 
+                style={{float:"left", marginTop:5, marginBottom:5, marginLeft:"10%", borderRadius:50}} 
                 className="blue-grey darken-1"
                 closeIcon={<Icon>close</Icon>}
                 revealIcon={<Icon>more_vert</Icon>}
@@ -30,6 +38,13 @@ const Contact = () => {
                 </Card>
             </Col>
         </Row>
+        <Parallax
+            image={<img alt="" src="http://materializecss.com/images/parallax2.jpg"/>}
+            options={{
+            responsiveThreshold: 0
+            }}
+        />
+        </div>
     );
 };
 
