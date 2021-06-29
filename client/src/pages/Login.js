@@ -28,12 +28,12 @@ const Login = () => {
 
     return (
     <Row>
-        <Col m={4} s={4} className="center"></Col>
-        <Col m={4} s={4} className="center">
+        <Col m={2} s={2} className="center"></Col>
+        <Col m={8} s={8} className="center">
         <Card
         header={<CardTitle image="https://materializecss.com/images/sample-1.jpg">Welcome! Please sign in to continue.</CardTitle>}
         className="blue-grey darken-1"
-        style={{marginTop:"100px",paddingBottom:"100px"}}
+        style={{marginTop:"75px",paddingBottom:"100px"}}
         >
         <form 
         textClassName="white-text"
@@ -58,7 +58,7 @@ const Login = () => {
       </form>
       </Card>
       </Col>
-      <Col m={4} s={4} className="center"></Col>
+      <Col m={2} s={2} className="center"></Col>
     </Row>
     );
 };
