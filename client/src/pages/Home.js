@@ -1,8 +1,8 @@
 import React from "react";
 import { Row, Col, Card, Icon } from "react-materialize";
 import HomeHeader from "../components/HomeHeader";
-import logo from "../logo.png";
-import background from "../background.png"
+import logo from "../images/logo.png";
+import background from "../images/background.png"
 // import Jumbotron from "../components/Jumbotron";
 // import homedata from "./homedata.json";
 
