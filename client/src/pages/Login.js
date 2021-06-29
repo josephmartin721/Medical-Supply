@@ -3,6 +3,13 @@ import { Row, Col, Card, Icon } from "react-materialize"
 import M from 'materialize-css'
 
 const Login = () => {
+    // Handles updating component state when the user types into the input field
+    function handleInputChange(event) {
+        const { name, value } = event.target;
+        setFormObject({...formObject, [name]: value})
+    };
+    
+
     return (
         <form 
         style={{marginTop: "100px"}} 
