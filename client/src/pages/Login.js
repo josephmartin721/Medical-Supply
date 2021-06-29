@@ -9,6 +9,19 @@ const Login = () => {
         setFormObject({...formObject, [name]: value})
     };
     
+    // When the form is submitted, user & password must be authenticated
+    function handleFormSubmit(event) {
+        event.preventDefault();
+        if (formObject.title && formObject.author) {
+        API.saveBook({
+            title: formObject.title,
+            author: formObject.author,
+            synopsis: formObject.synopsis
+        })
+            .then(res => loadBooks())
+            .catch(err => console.log(err));
+        }
+    };
 
     return (
         <form 
