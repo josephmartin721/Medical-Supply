@@ -49,12 +49,12 @@ const Register = () => {
         />
         <Input
         onChange={handleInputChange}
-        name="firstname"
+        name="first"
         placeholder="First Name"
         />
         <Input
         onChange={handleInputChange}
-        name="lastname"
+        name="last"
         placeholder="Last Name"
         />
         <Input
@@ -99,7 +99,7 @@ const Register = () => {
         />
         <FormBtn
             style={{marginTop:"25px"}}
-          disabled={!(formObject.email && formObject.password)}
+          disabled={!(formObject.username && formObject.password && formObject.first && formObject.last && formObject.dea && formObject.address && formObject.city && formObject.state && formObject.zip && formObject.phone && formObject.email)}
         //   onClick={handleFormSubmit}
         >
           Submit
