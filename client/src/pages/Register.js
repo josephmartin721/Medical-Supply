@@ -39,13 +39,63 @@ const Register = () => {
         >
         <Input
         onChange={handleInputChange}
-        name="email"
-        placeholder="Email"
+        name="username"
+        placeholder="Username"
         />
         <Input
         onChange={handleInputChange}
         name="password"
         placeholder="Password"
+        />
+        <Input
+        onChange={handleInputChange}
+        name="firstname"
+        placeholder="First Name"
+        />
+        <Input
+        onChange={handleInputChange}
+        name="lastname"
+        placeholder="Last Name"
+        />
+        <Input
+        onChange={handleInputChange}
+        name="dea"
+        placeholder="DEA Number"
+        />
+        <Input
+        onChange={handleInputChange}
+        name="nameofpractice"
+        placeholder="Name of Practice"
+        />
+        <Input
+        onChange={handleInputChange}
+        name="address"
+        placeholder="Address"
+        />
+        <Input
+        onChange={handleInputChange}
+        name="city"
+        placeholder="City"
+        />
+        <Input
+        onChange={handleInputChange}
+        name="state"
+        placeholder="State"
+        />
+        <Input
+        onChange={handleInputChange}
+        name="zipcode"
+        placeholder="Zip Code"
+        />
+        <Input
+        onChange={handleInputChange}
+        name="phone"
+        placeholder="Phone"
+        />
+        <Input
+        onChange={handleInputChange}
+        name="email"
+        placeholder="Email"
         />
         <FormBtn
             style={{marginTop:"25px"}}
