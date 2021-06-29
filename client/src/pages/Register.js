@@ -31,10 +31,11 @@ const Register = () => {
         <Card
         header={<CardTitle image="https://materializecss.com/images/sample-1.jpg">Please fill out all required information below</CardTitle>}
         className="blue-grey darken-1"
-        style={{marginTop:"25px",paddingBottom:"100px"}}
+        style={{marginTop:"25px", paddingTop:"20px", paddingBottom:"25px", borderRadius:20}}
         >
         <form 
         textClassName="white-text"
+        style={{paddingBottom:25}}
         >
         <Input
         onChange={handleInputChange}
