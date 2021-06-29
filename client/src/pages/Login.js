@@ -32,7 +32,7 @@ const Login = () => {
         <Card
         header={<CardTitle image="https://materializecss.com/images/sample-1.jpg">Welcome! Please sign in to continue.</CardTitle>}
         className="blue-grey darken-1"
-        style={{marginTop:"75px",paddingBottom:"100px"}}
+        style={{marginTop:"25px",paddingBottom:"100px"}}
         >
         <form 
         textClassName="white-text"
