@@ -27,8 +27,7 @@ const Login = () => {
     // };
 
     return (
-    <Row>
-        <Col m={2} s={2} className="center"></Col>
+    <Row className="center">
         <Col m={8} s={8} className="center">
         <Card
         header={<CardTitle image="https://materializecss.com/images/sample-1.jpg">Welcome! Please sign in to continue.</CardTitle>}
@@ -58,7 +57,6 @@ const Login = () => {
       </form>
       </Card>
       </Col>
-      <Col m={2} s={2} className="center"></Col>
     </Row>
     );
 };
