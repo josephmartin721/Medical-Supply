@@ -29,7 +29,7 @@ const Register = () => {
     <Row className="center">
         <Col m={8} s={8} className="center">
         <Card
-        header={<CardTitle image="https://materializecss.com/images/sample-1.jpg">Welcome! Please sign in to continue.</CardTitle>}
+        header={<CardTitle image="https://materializecss.com/images/sample-1.jpg">Please fill out all required information below</CardTitle>}
         className="blue-grey darken-1"
         style={{marginTop:"25px",paddingBottom:"100px"}}
         >
