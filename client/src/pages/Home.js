@@ -31,7 +31,7 @@ const Home = () => {
             <Card
             style={{marginTop: "100px"}} 
             actions={[
-                <a key="1" href="#">Products</a>
+                <a key="1" href="/Products">Products</a>
                 ]}
             className="blue-grey darken-1"
             closeIcon={<Icon>close</Icon>}
