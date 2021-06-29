@@ -27,12 +27,15 @@ const Login = () => {
     // };
 
     return (
+    <Row>
+        <Col m={4} s={4} className="center"></Col>
+        <Col m={4} s={4} className="center">
         <Card
         header={<CardTitle image="https://materializecss.com/images/sample-1.jpg">Welcome! Please sign in to continue.</CardTitle>}
         className="blue-grey darken-1"
+        style={{marginTop:"100px",paddingBottom:"100px"}}
         >
         <form 
-        style={{marginTop: "100px"}} 
         textClassName="white-text"
         >
         <Input
@@ -46,6 +49,7 @@ const Login = () => {
         placeholder="Password"
         />
         <FormBtn
+            style={{marginTop:"25px"}}
           disabled={!(formObject.email && formObject.password)}
         //   onClick={handleFormSubmit}
         >
@@ -53,6 +57,9 @@ const Login = () => {
         </FormBtn>
       </form>
       </Card>
+      </Col>
+      <Col m={4} s={4} className="center"></Col>
+    </Row>
     );
 };
 
