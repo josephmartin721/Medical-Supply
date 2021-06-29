@@ -1,5 +1,6 @@
 import React from "react";
 import { Col } from "react-materialize";
+import homeheaderpic from "../../images/homeheader.png"
 
 function HomeHeader() {
     return (

@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { Row, Col, Card, CardTitle, Icon } from "react-materialize"
 import { Input, TextArea, FormBtn } from "../components/Form";
-import M from 'materialize-css'
 
 const Login = () => {
     const [formObject, setFormObject] = useState({})
@@ -30,6 +29,9 @@ const Login = () => {
     <Row className="center">
         <Col m={8} s={8} className="center">
         <Card
+        actions={[
+          <a key="1" href="/Register">New User? Sign Up Here</a>
+        ]}
         header={<CardTitle image="https://materializecss.com/images/sample-1.jpg">Welcome! Please sign in to continue.</CardTitle>}
         className="blue-grey darken-1"
         style={{marginTop:"25px",paddingBottom:"100px"}}
@@ -39,8 +41,8 @@ const Login = () => {
         >
         <Input
         onChange={handleInputChange}
-        name="email"
-        placeholder="Email"
+        name="username"
+        placeholder="Username"
         />
         <Input
         onChange={handleInputChange}
