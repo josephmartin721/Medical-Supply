@@ -28,11 +28,11 @@ const Login = () => {
 
     return (
         <Card
-        header={<CardTitle image="https://materializecss.com/images/sample-1.jpg">Card Title</CardTitle>}
+        header={<CardTitle image="https://materializecss.com/images/sample-1.jpg">Welcome! Please sign in to continue.</CardTitle>}
+        className="blue-grey darken-1"
         >
         <form 
         style={{marginTop: "100px"}} 
-        className="blue-grey darken-1"
         textClassName="white-text"
         >
         <Input
