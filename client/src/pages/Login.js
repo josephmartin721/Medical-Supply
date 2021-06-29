@@ -12,11 +12,10 @@ const Login = () => {
     // When the form is submitted, user & password must be authenticated
     function handleFormSubmit(event) {
         event.preventDefault();
-        if (formObject.title && formObject.author) {
-        API.saveBook({
-            title: formObject.title,
-            author: formObject.author,
-            synopsis: formObject.synopsis
+        if (formObject.email && formObject.password) {
+        API.authenticate({
+            email: formObject.email,
+            password: formObject.password,
         })
             .then(res => loadBooks())
             .catch(err => console.log(err));
@@ -31,21 +30,16 @@ const Login = () => {
         >
         <Input
           onChange={handleInputChange}
-          name="title"
-          placeholder="Title (required)"
+          name="email"
+          placeholder="Email"
         />
         <Input
           onChange={handleInputChange}
-          name="author"
-          placeholder="Author (required)"
-        />
-        <TextArea
-          onChange={handleInputChange}
-          name="synopsis"
-          placeholder="Synopsis (Optional)"
+          name="password"
+          placeholder="Password"
         />
         <FormBtn
-          disabled={!(formObject.author && formObject.title)}
+          disabled={!(formObject.email && formObject.password)}
           onClick={handleFormSubmit}
         >
           Submit Book
