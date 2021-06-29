@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { Row, Col, Card, CardTitle, Icon } from "react-materialize"
 import { Input, TextArea, FormBtn } from "../components/Form";
-import M from 'materialize-css'
 
 const Register = () => {
     const [formObject, setFormObject] = useState({})
@@ -64,7 +63,7 @@ const Register = () => {
         />
         <Input
         onChange={handleInputChange}
-        name="nameofpractice"
+        name="practice"
         placeholder="Name of Practice"
         />
         <Input

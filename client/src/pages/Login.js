@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { Row, Col, Card, CardTitle, Icon } from "react-materialize"
 import { Input, TextArea, FormBtn } from "../components/Form";
-import M from 'materialize-css'
 
 const Login = () => {
     const [formObject, setFormObject] = useState({})
@@ -39,8 +38,8 @@ const Login = () => {
         >
         <Input
         onChange={handleInputChange}
-        name="email"
-        placeholder="Email"
+        name="username"
+        placeholder="Username"
         />
         <Input
         onChange={handleInputChange}
