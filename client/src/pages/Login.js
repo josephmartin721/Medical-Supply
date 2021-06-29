@@ -10,17 +10,18 @@ const Login = () => {
     };
     
     // When the form is submitted, user & password must be authenticated
-    function handleFormSubmit(event) {
-        event.preventDefault();
-        if (formObject.email && formObject.password) {
-        API.authenticate({
-            email: formObject.email,
-            password: formObject.password,
-        })
-            .then(res => loadBooks())
-            .catch(err => console.log(err));
-        }
-    };
+    // Note: This does not actually do anything yet:
+    // function handleFormSubmit(event) {
+    //     event.preventDefault();
+    //     if (formObject.email && formObject.password) {
+    //     API.authenticate({
+    //         email: formObject.email,
+    //         password: formObject.password,
+    //     })
+    //         .then(res => loadBooks())
+    //         .catch(err => console.log(err));
+    //     }
+    // };
 
     return (
         <form 
