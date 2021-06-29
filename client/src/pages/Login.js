@@ -3,6 +3,8 @@ import { Row, Col, Card, Icon } from "react-materialize"
 import M from 'materialize-css'
 
 const Login = () => {
+    const [formObject, setFormObject] = useState({})
+    
     // Handles updating component state when the user types into the input field
     function handleInputChange(event) {
         const { name, value } = event.target;
