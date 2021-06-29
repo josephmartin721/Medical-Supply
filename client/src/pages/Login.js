@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import { Row, Col, Card, CardTitle, Icon } from "react-materialize"
-import { Input, TextArea, FormBtn } from "../components/Form";
+import { Row, Col, Card, CardTitle } from "react-materialize"
+import { Input, FormBtn } from "../components/Form";
 
 const Login = () => {
     const [formObject, setFormObject] = useState({})
