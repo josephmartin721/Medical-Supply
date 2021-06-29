@@ -42,8 +42,8 @@ const Home = () => {
             </Col>
         </Row>
         <Jumbotron>
-            <h1>About Us</h1>
-            <h4>In 2021, our company started out....</h4>
+            <h1 style={{color:"white"}}>About Us</h1>
+            <h4 style={{color:"white"}}>In 2021, our company started out....</h4>
         </Jumbotron>
     </Row>
     </div>
