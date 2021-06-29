@@ -27,6 +27,7 @@ const Login = () => {
     // };
 
     return (
+        <Card>
         <form 
         style={{marginTop: "100px"}} 
         className="blue-grey darken-1"
@@ -46,9 +47,10 @@ const Login = () => {
           disabled={!(formObject.email && formObject.password)}
         //   onClick={handleFormSubmit}
         >
-          Submit Book
+          Submit
         </FormBtn>
       </form>
+      </Card>
     );
 };
 
