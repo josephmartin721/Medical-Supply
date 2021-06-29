@@ -19,7 +19,7 @@ const Home = () => {
                 closeIcon={<Icon>close</Icon>}
                 revealIcon={<Icon>more_vert</Icon>}
                 textClassName="white-text"
-                title="WITTY CATCH PHRASE HERE!!!!!!!!!!!!!!!!!!!!!!!!!">
+                title="CATCH PHRASE">
                 </Card>
             </Col>
             <Col className="center" m={4} s={4}>
