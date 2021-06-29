@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Row, Col, Card, Icon } from "react-materialize"
+import { Row, Col, Card, CardTitle, Icon } from "react-materialize"
 import { Input, TextArea, FormBtn } from "../components/Form";
 import M from 'materialize-css'
 
@@ -27,21 +27,23 @@ const Login = () => {
     // };
 
     return (
-        <Card>
+        <Card
+        header={<CardTitle image="https://materializecss.com/images/sample-1.jpg">Card Title</CardTitle>}
+        >
         <form 
         style={{marginTop: "100px"}} 
         className="blue-grey darken-1"
         textClassName="white-text"
         >
         <Input
-          onChange={handleInputChange}
-          name="email"
-          placeholder="Email"
+        onChange={handleInputChange}
+        name="email"
+        placeholder="Email"
         />
         <Input
-          onChange={handleInputChange}
-          name="password"
-          placeholder="Password"
+        onChange={handleInputChange}
+        name="password"
+        placeholder="Password"
         />
         <FormBtn
           disabled={!(formObject.email && formObject.password)}
