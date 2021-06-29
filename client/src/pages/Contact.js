@@ -24,14 +24,14 @@ const Contact = () => {
         <Row className="section white">
             <Col s={7}>
             <img 
-                style={{float:"right", marginTop:5, marginBottom:5, maxWidth:"100%", height:"auto", borderRadius:50}} 
+                style={{float:"right", marginTop:2, marginBottom:2, maxWidth:"100%", height:"auto", borderRadius:50}} 
                 src={tech}
                 alt="tech"
                 />
             </Col>
             <Col s={5}>
                 <Card
-                style={{float:"left", marginTop:5, marginBottom:5, marginLeft:"10%", borderRadius:50}} 
+                style={{float:"left", marginTop:2, marginBottom:2, marginLeft:"10%", borderRadius:50}} 
                 className="blue-grey darken-1"
                 closeIcon={<Icon>close</Icon>}
                 revealIcon={<Icon>more_vert</Icon>}
