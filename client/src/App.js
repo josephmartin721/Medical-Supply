@@ -6,6 +6,7 @@ import Register from './pages/Register';
 import Products from './pages/Products';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
+// import Footer from './components/Footer';
 import NoMatch from "./pages/NoMatch";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -37,6 +38,7 @@ function App() {
           <NoMatch/>
         </Route>
       </Switch>
+      {/* <Footer /> */}
       </div>
     </Router>
   );
