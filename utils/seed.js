@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const { Product, Shop, User } = require("../models");
 const axios = require("axios");
 const chalk = require("chalk");
+const bcrypt = require("bcrypt");
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/medicalsupply",
     {
@@ -46,7 +47,8 @@ const seed = async function () {
         const usersData = await axios.get("https://randomuser.me/api/?results=3");
         // add roles and passwords to users
         const users = usersData.data.results.map((user, idx) => {
-            return { ...user, role: roles[idx], password: "password#1" }
+            hashPass = bcrypt.hashSync("password#1", 10);
+            return { ...user, role: roles[idx], password: hashPass }
         });
 
         // insert users in db
