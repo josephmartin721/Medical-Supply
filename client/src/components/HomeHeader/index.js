@@ -1,16 +1,58 @@
 import React from "react";
-import { Col } from "react-materialize";
-import homeheaderpic from "../../images/homeheader.png"
+import { Col, Row, Card, Icon, Parallax } from "react-materialize";
+import homeheaderpic from "../../images/06.png";
+import pictwo from "../../images/09.png";
+import background from "../../images/background.png"
+import logo from "../../images/logo.png";
 
 function HomeHeader() {
     return (
-        <Col xl={12} s={12}>
-            <img 
-            style={{width: "100%", height: "auto"}} 
-            src={homeheaderpic} 
-            alt=""
-            />
-        </Col>
+    <div>
+        <Parallax
+            image={<img alt="" src={homeheaderpic}/>}
+            options={{
+            responsiveThreshold: 0
+            }}
+        />
+        <Row style={{backgroundImage: `url(${background})`}}>
+            <Col m={4} s={4} className="center">
+                <Card
+                style={{marginTop: "35px"}}
+                className="blue-grey darken-1"
+                closeIcon={<Icon>close</Icon>}
+                revealIcon={<Icon>more_vert</Icon>}
+                textClassName="white-text"
+                title="CATCH PHRASE">
+                </Card>
+            </Col>
+            <Col className="center" m={4} s={4}>
+                <img 
+                style={{marginTop: "10px", marginBottom: "10px", maxWidth:"100%", height:"auto"}} 
+                src={logo} 
+                alt="logo"
+                />
+            </Col>
+            <Col  m={4} s={4} className="center">
+            <Card
+            style={{marginTop: "35px"}} 
+            actions={[
+                <a key="1" href="/Products">Products</a>
+                ]}
+            className="blue-grey darken-1"
+            closeIcon={<Icon>close</Icon>}
+            revealIcon={<Icon>more_vert</Icon>}
+            textClassName="white-text"
+            title="Browse Our Products Here">
+            </Card>
+            </Col>
+        </Row>
+        <Parallax
+            image={<img alt="" src={pictwo}/>}
+            options={{
+            responsiveThreshold: 0
+            }}
+        />
+    </div>
     );
 }
 
