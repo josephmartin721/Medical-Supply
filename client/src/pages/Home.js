@@ -1,8 +1,7 @@
 import React from "react";
-import { Row, Col, Card, Icon } from "react-materialize";
+import { Row, Col } from "react-materialize";
 import HomeHeader from "../components/HomeHeader";
 import Jumbotron from "../components/Jumbotron";
-
 import background from "../images/background.png"
 
 const Home = () => {
@@ -16,14 +15,12 @@ const Home = () => {
                 </div>
         </div>
         <HomeHeader />
-        <div>
-        <Row style={{marginTop: "5px", backgroundImage: `url(${background})`}}>
+        <Row style={{backgroundImage: `url(${background})`}}>
             <Jumbotron>
                 <h1 style={{color:"white"}}>About Us</h1>
                 <h4 style={{color:"white"}}>In 2021, our company started out....</h4>
             </Jumbotron>
         </Row>
-        </div>
     </Col>
     );
 };

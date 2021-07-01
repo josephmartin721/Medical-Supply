@@ -15,7 +15,7 @@ function HomeHeader() {
             }}
         />
         <Row style={{backgroundImage: `url(${background})`}}>
-            <Col m={4} s={4} className="center">
+            <Col s={4} className="center">
                 <Card
                 style={{marginTop: "35px"}}
                 className="blue-grey darken-1"
@@ -25,14 +25,14 @@ function HomeHeader() {
                 title="CATCH PHRASE">
                 </Card>
             </Col>
-            <Col className="center" m={4} s={4}>
+            <Col s={4} className="center">
                 <img 
                 style={{marginTop: "10px", marginBottom: "10px", maxWidth:"100%", height:"auto"}} 
                 src={logo} 
                 alt="logo"
                 />
             </Col>
-            <Col  m={4} s={4} className="center">
+            <Col s={4} className="center">
             <Card
             style={{marginTop: "35px"}} 
             actions={[
