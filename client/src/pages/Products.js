@@ -1,8 +1,9 @@
-import React from "react"
-import M from 'materialize-css'
+import React, { Component } from "react";
+import Navbar from "../components/Navbar";
 
-function Products() {
+class Products extends Component {
 
 }
+
 
 export default Products
