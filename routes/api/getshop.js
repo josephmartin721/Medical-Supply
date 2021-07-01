@@ -3,7 +3,13 @@ const Shop = require("../../models/Shop");
 
 // Shop routes
 router.route("/")
-  .get(medController.findAll)
-  .post(medController.create);
+  .get(Shop.findAll)
+  .post(Shop.create);
+
+router
+  .route("/:id")
+  .get(Shop.findById)
+  .put(Shop.update)
+  .delete(Shop.remove);
 
 module.exports = router;
