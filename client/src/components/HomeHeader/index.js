@@ -9,7 +9,7 @@ function HomeHeader() {
     return (
     <div>
         <Parallax
-            image={<img alt="" src={homeheaderpic} style={{width: "100%", height: "auto", backgroundPosition: "50% 50%", backgroundSize: "100% cover!important", overflow: "hidden"}}/>}
+            image={<img alt="" src={homeheaderpic} style={{width: "auto", height: "auto"}}/>}
             options={{
             responsiveThreshold: 1
             }}
@@ -47,7 +47,7 @@ function HomeHeader() {
             </Col>
         </Row>
         <Parallax
-            image={<img alt="" src={pictwo} style={{width: "100%", height: "auto", backgroundPosition: "50% 50%", backgroundSize: "100% cover!important", overflow: "hidden"}}/>}
+            image={<img alt="" src={pictwo} style={{width: "auto", height: "auto"}}/>}
             options={{
             responsiveThreshold: 1
             }}
