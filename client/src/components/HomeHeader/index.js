@@ -17,12 +17,12 @@ function HomeHeader() {
         <Row style={{backgroundImage: `url(${background})`}}>
             <Col s={4} className="center">
                 <Card
-                style={{marginTop: "35px"}}
+                style={{marginTop: "45px", marginLeft: "10px"}}
                 className="blue-grey darken-1"
                 closeIcon={<Icon>close</Icon>}
                 revealIcon={<Icon>more_vert</Icon>}
                 textClassName="white-text"
-                title="CATCH PHRASE">
+                title="Excellence is our Specialty">
                 </Card>
             </Col>
             <Col s={4} className="center">
@@ -33,17 +33,17 @@ function HomeHeader() {
                 />
             </Col>
             <Col s={4} className="center">
-            <Card
-            style={{marginTop: "35px"}} 
-            actions={[
-                <a key="1" href="/Products">Products</a>
-                ]}
-            className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
-            textClassName="white-text"
-            title="Browse Our Products Here">
-            </Card>
+                <Card
+                style={{marginTop: "35px", marginRight: "10px"}} 
+                actions={[
+                    <a key="1" href="/Products">Products</a>
+                    ]}
+                className="blue-grey darken-1"
+                closeIcon={<Icon>close</Icon>}
+                revealIcon={<Icon>more_vert</Icon>}
+                textClassName="white-text"
+                title="Browse Our Products Here">
+                </Card>
             </Col>
         </Row>
         <Parallax
