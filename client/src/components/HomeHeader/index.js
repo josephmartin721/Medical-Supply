@@ -14,7 +14,7 @@ function HomeHeader() {
             responsiveThreshold: 1
             }}
         />
-        <Row style={{backgroundImage: `url(${background})`, objectFit: "contain", width: "100.8%", height: "auto", backgroundPosition: "50% 50%", backgroundSize: "100% cover!important", overflow: "hidden"}}>
+        <Row style={{backgroundImage: `url(${background})`, width: "100.8%", height: "auto"}}>
             <Col s={4} className="center">
                 <Card
                 style={{marginTop: "45px", marginLeft: "10px"}}
@@ -27,7 +27,7 @@ function HomeHeader() {
             </Col>
             <Col s={4} className="center">
                 <img 
-                style={{marginTop: "10px", marginBottom: "10px", maxWidth:"100%", height:"auto"}} 
+                style={{paddingTop: "10px", paddingBottom: "10px", maxWidth:"100%", height:"auto"}} 
                 src={logo} 
                 alt="logo"
                 />
