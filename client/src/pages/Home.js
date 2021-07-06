@@ -15,7 +15,7 @@ const Home = () => {
                 </div>
         </div>
         <HomeHeader />
-        <Row style={{backgroundImage: `url(${background})`}}>
+        <Row style={{backgroundImage: `url(${background})`, width: "100%", height: "auto", backgroundPosition: "50% 50%", backgroundSize: "100% cover!important", overflow: "hidden"}}>
             <Jumbotron>
                 <h1 style={{color:"white"}}>About Us</h1>
                 <h4 style={{color:"white"}}>In 2021, our company started out....</h4>
