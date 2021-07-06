@@ -11,7 +11,7 @@ function HomeHeader() {
         <Parallax
             image={<img alt="" src={homeheaderpic}/>}
             options={{
-            responsiveThreshold: 0
+            responsiveThreshold: 1
             }}
         />
         <Row style={{backgroundImage: `url(${background})`}}>
@@ -49,7 +49,7 @@ function HomeHeader() {
         <Parallax
             image={<img alt="" src={pictwo}/>}
             options={{
-            responsiveThreshold: 0
+            responsiveThreshold: 1
             }}
         />
     </div>
