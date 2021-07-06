@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Row, Card, Icon, Parallax } from "react-materialize";
 import homeheaderpic from "../../images/06.png";
 import pictwo from "../../images/09.png";
-import background from "../../images/background.png"
+import background from "../../images/background.png";
 import logo from "../../images/logo.png";
 
 function HomeHeader() {
@@ -14,8 +14,7 @@ function HomeHeader() {
             responsiveThreshold: 1
             }}
         />
-        <div style={{objectFit: "contain", width: "100%"}}>
-        <Row style={{backgroundImage: `url(${background})`, width: "100%", height: "auto", backgroundPosition: "50% 50%", backgroundSize: "100% cover!important", overflow: "hidden"}}>
+        <Row style={{backgroundImage: `url(${background})`, objectFit: "contain", width: "100%", height: "auto", backgroundPosition: "50% 50%", backgroundSize: "100% cover!important", overflow: "hidden"}}>
             <Col s={4} className="center">
                 <Card
                 style={{marginTop: "45px", marginLeft: "10px"}}
@@ -47,7 +46,6 @@ function HomeHeader() {
                 </Card>
             </Col>
         </Row>
-        </div>
         <Parallax
             image={<img alt="" src={pictwo} style={{width: "100%", height: "auto", backgroundPosition: "50% 50%", backgroundSize: "100% cover!important", overflow: "hidden"}}/>}
             options={{
