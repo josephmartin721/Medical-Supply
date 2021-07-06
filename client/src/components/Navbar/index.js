@@ -6,9 +6,11 @@ import { Button } from "react-materialize";
 function Navbar() {
   return (
     <nav style={{backgroundColor: "#260688"}} className="navbar navbar-expand-lg navbar-light bg-light">
-      <Link className="navbar-brand" to="/">
-        Company Name Here
+      <div className="center">
+      <Link className="navbar-brand" to="/" style={{fontSize: "4em", fontFamily: "impact, fantasy"}}>
+        ENT Technics
       </Link>
+      </div>
       <div>
         <ul className="navbar-nav">
           <li className="nav-item">
