@@ -6,7 +6,7 @@ import Clearview from "../images/Clearview.jpg";
 import HDS from "../images/HDS.png";
 import DisposableBSS from "../images/DisposableBSS.jpg";
 import Rhinofreeze from "../images/Rhinofreeze.png";
-import ProductId from "./ProductId";
+import background from "../images/background.png";
 import "./style.css";
 
 class Products extends Component {
