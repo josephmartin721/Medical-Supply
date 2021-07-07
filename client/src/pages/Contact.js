@@ -8,7 +8,7 @@ class Contact extends Component {
   render() {
     return (
     <Col xl={12} s={12}>
-      <div className="section" style={{backgroundImage: `url(${background})`, height: 100}}>
+      <div className="section" style={{backgroundImage: `url(${background})`, height: 150}}>
       </div>
       <Row>
         <Col>

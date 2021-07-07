@@ -19,7 +19,7 @@ function Navbar() {
           node="a"
           waves="light"
           className="indigo"
-          style={{marginLeft: "5px"}}
+          style={{marginLeft: "5%"}}
           >
             <Link
               to="/"
@@ -38,7 +38,7 @@ function Navbar() {
           node="a"
           waves="light"
           className="indigo"
-          style={{marginLeft: "5px"}}
+          style={{marginLeft: "5%"}}
           >
             <Link
               to="/Products"
@@ -53,7 +53,7 @@ function Navbar() {
           node="a"
           waves="light"
           className="indigo"
-          style={{marginLeft: "5px"}}
+          style={{marginLeft: "5%"}}
           >
             <Link
               to="/Contact"
@@ -68,7 +68,7 @@ function Navbar() {
           node="a"
           waves="light"
           className="indigo"
-          style={{marginLeft: "5px"}}
+          style={{marginLeft: "5%"}}
           >
             <Link
               to="/Login"
