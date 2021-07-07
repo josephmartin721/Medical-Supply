@@ -1,9 +1,15 @@
 const router = require("express").Router();
-const Shop = require("../../models/Shop");
+const Shop = require("../../controllers/shopController");
 
 // Shop routes
 router.route("/")
-  .get(medController.findAll)
-  .post(medController.create);
+  .get(Shop.findAll)
+  .post(Shop.create);
+
+router
+  .route("/:id")
+  .get(Shop.findById)
+  .put(Shop.update)
+  .delete(Shop.remove);
 
 module.exports = router;
