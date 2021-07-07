@@ -1,23 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return(
     <footer class="page-footer" style={{backgroundColor: "#260688"}}>
-          <div class="container">
-            <div class="row">
+          
+          <div class="center">
+            ETN Technics
+            <div class="container center">
               <div>
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                <Link to="/contact" style={{ color: "#FFF"}}>Contact</Link>
+                </div>
+              <div>
+                <Link to="/products" style={{ color: "#FFF"}}>Products</Link>
+                </div>
+            © 2021 Copyright Text
             </div>
           </div>
         </footer>
