@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Row, Col, Card, CardTitle } from "react-materialize";
 import { Input, FormBtn } from "../components/Form";
-import background from "../images/background.png"
+import background from "../images/background.png";
+import headerpic from "../images/37.jpg";
 
 const Login = () => {
   const [formObject, setFormObject] = useState({})
@@ -28,7 +29,7 @@ const Login = () => {
 
   return (
     <Col xl={12} s={12}>
-      <div className="section" style={{backgroundImage: `url(${background})`, height: 100}}>
+      <div className="section" style={{backgroundImage: `url(${background})`, height: 150}}>
       </div>
       <Row className="center">
         <Col s={2}></Col>
@@ -37,7 +38,7 @@ const Login = () => {
           actions={[
             <a key="1" href="/Register">New User? Sign Up Here</a>
           ]}
-          header={<CardTitle image="https://materializecss.com/images/sample-1.jpg">Welcome! Please sign in to continue.</CardTitle>}
+          header={<CardTitle image={headerpic}>Welcome! Please sign in to continue.</CardTitle>}
           className="blue-grey darken-1"
           style={{marginTop:"25px", paddingTop:"20px", paddingBottom:"25px", borderRadius:20}}
           >
