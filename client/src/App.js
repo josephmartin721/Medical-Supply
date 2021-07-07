@@ -6,7 +6,9 @@ import Register from './pages/Register';
 import Products from './pages/Products';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
-// import Footer from './components/Footer';
+import ProductId from "./pages/ProductId";
+import Footer from "./components/Footer";
+
 import NoMatch from "./pages/NoMatch";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -29,7 +31,7 @@ function App() {
           <Products/>
         </Route>
         <Route exact path="/products/:id">
-          {/* Individual Product Page will go here */}
+          <ProductId/>
         </Route>
         <Route exact path="/contact">
           <Contact/>
@@ -38,8 +40,8 @@ function App() {
           <NoMatch/>
         </Route>
       </Switch>
-      {/* <Footer /> */}
       </div>
+      <Footer/>
     </Router>
   );
 }
