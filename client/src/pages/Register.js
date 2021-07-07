@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Row, Col, Card, CardTitle } from "react-materialize";
 import { Input, FormBtn } from "../components/Form";
-import background from "../images/background.png"
+import background from "../images/background.png";
+import headerpic from "../images/30.jpg";
 
 const Register = () => {
   const [formObject, setFormObject] = useState({})
@@ -34,7 +35,7 @@ const Register = () => {
         <Col s={2}></Col>
         <Col m={8} s={8} className="center">
           <Card
-          header={<CardTitle image="https://materializecss.com/images/sample-1.jpg">Please fill out all required information below</CardTitle>}
+          header={<CardTitle image={headerpic}>Please fill out all required information below</CardTitle>}
           className="blue-grey darken-1"
           style={{marginTop:"25px", paddingTop:"20px", paddingBottom:"25px", borderRadius:20}}
           >
