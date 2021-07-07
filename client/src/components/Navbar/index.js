@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "react-materialize";
-import background from "../../images/background.png";
 import logo from "../../images/logo.png"
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
@@ -17,10 +16,10 @@ function Navbar() {
         <ul className="navbar-nav">
           <li className="nav-item">
           <Button
-          node="button"
+          node="a"
           waves="light"
           className="indigo"
-          style={{marginLeft: "20px"}}
+          style={{marginLeft: "5px"}}
           >
             <Link
               to="/"
@@ -36,10 +35,10 @@ function Navbar() {
           </li>
           <li className="nav-item">
           <Button
-          node="button"
+          node="a"
           waves="light"
           className="indigo"
-          style={{marginLeft: "20px"}}
+          style={{marginLeft: "5px"}}
           >
             <Link
               to="/Products"
@@ -51,10 +50,10 @@ function Navbar() {
           </li>
           <li className="nav-item">
           <Button
-          node="button"
+          node="a"
           waves="light"
           className="indigo"
-          style={{marginLeft: "20px"}}
+          style={{marginLeft: "5px"}}
           >
             <Link
               to="/Contact"
@@ -66,10 +65,10 @@ function Navbar() {
           </li>
           <li className="nav-item">
           <Button
-          node="button"
+          node="a"
           waves="light"
           className="indigo"
-          style={{marginLeft: "20px"}}
+          style={{marginLeft: "5px"}}
           >
             <Link
               to="/Login"
