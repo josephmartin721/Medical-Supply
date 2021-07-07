@@ -1,55 +1,53 @@
 import React from "react";
-import { Row, Col, Card, Icon } from "react-materialize";
+import { Col, Row, Card, Icon } from "react-materialize";
 import HomeHeader from "../components/HomeHeader";
-import Jumbotron from "../components/Jumbotron";
+import background from "../images/background.png";
 import logo from "../images/logo.png";
-import background from "../images/background.png"
 
 const Home = () => {
     return(
-    <div>
-    <HomeHeader />
-    <div>
-    <Row style={{marginTop: "5px", backgroundImage: `url(${background})`}}>
-        <Row>
-            <Col m={4} s={4} className="center">
+    <Col xl={12} s={12}>
+        <div className="section" style={{backgroundImage: `url(${background})`}}>
+            <div className="row container white-text">
+                <h2 className="header" style={{float:"left", marginLeft:50}}>
+                Procession in the Evolution of ENT Technology
+                </h2>
+            </div>
+        </div>
+        <HomeHeader />
+        <Row style={{backgroundImage: `url(${background})`, width: "100.8%", height: "auto"}}>
+            <Col s={4} className="center">
                 <Card
-                style={{marginTop: "100px"}} 
+                style={{marginTop: "45px", marginLeft: "10px"}}
                 className="blue-grey darken-1"
                 closeIcon={<Icon>close</Icon>}
                 revealIcon={<Icon>more_vert</Icon>}
                 textClassName="white-text"
-                title="CATCH PHRASE">
+                title="Excellence is our Specialty">
                 </Card>
             </Col>
-            <Col className="center" m={4} s={4}>
+            <Col s={4} className="center">
                 <img 
-                style={{marginTop: "50px", marginBottom: "50px", maxWidth:"100%", height:"auto"}} 
+                style={{paddingTop: "10px", paddingBottom: "10px", maxWidth:"100%", height:"auto"}} 
                 src={logo} 
                 alt="logo"
                 />
             </Col>
-            <Col  m={4} s={4} className="center">
-            <Card
-            style={{marginTop: "100px"}} 
-            actions={[
-                <a key="1" href="/Products">Products</a>
-                ]}
-            className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
-            textClassName="white-text"
-            title="Browse Our Products Here">
-            </Card>
+            <Col s={4} className="center">
+                <Card
+                style={{marginTop: "35px", marginRight: "10px"}} 
+                actions={[
+                    <a key="1" href="/Products">Products</a>
+                    ]}
+                className="blue-grey darken-1"
+                closeIcon={<Icon>close</Icon>}
+                revealIcon={<Icon>more_vert</Icon>}
+                textClassName="white-text"
+                title="Browse Our Products Here">
+                </Card>
             </Col>
         </Row>
-        <Jumbotron>
-            <h1 style={{color:"white"}}>About Us</h1>
-            <h4 style={{color:"white"}}>In 2021, our company started out....</h4>
-        </Jumbotron>
-    </Row>
-    </div>
-    </div>
+    </Col>
     );
 };
 
