@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Row, Col, Card, CardTitle } from "react-materialize";
 import { Input, FormBtn } from "../components/Form";
-import background from "../images/background.png"
+import background from "../images/background.png";
 
 const Login = () => {
   const [formObject, setFormObject] = useState({})
