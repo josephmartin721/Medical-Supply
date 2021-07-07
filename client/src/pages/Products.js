@@ -17,7 +17,7 @@ class Products extends Component {
               <div className="card-image">
               <img src="https://materializecss.com/images/sample-1.jpg"/>
               </div>
-              <CardTitle>This Product Name</CardTitle>
+              <CardTitle>Total Image</CardTitle>
               <p>kjdsflsjfoijef</p>
               <Button onClick={ProductId}>
                 View
@@ -30,7 +30,7 @@ class Products extends Component {
               <div className="card-image">
               <img src="https://materializecss.com/images/sample-1.jpg"/>
               </div>
-              <CardTitle>This Product Name</CardTitle>
+              <CardTitle>Disposable BSS</CardTitle>
               <p>kjdsflsjfoijef</p>
               </Card>
             </Col>
@@ -41,7 +41,7 @@ class Products extends Component {
               <div className="card-image">
               <img src="https://materializecss.com/images/sample-1.jpg"/>
               </div>
-              <CardTitle>This Product Name</CardTitle>
+              <CardTitle>HDS</CardTitle>
               <p>kjdsflsjfoijef</p>
               </Card>
             </Col>
@@ -50,7 +50,7 @@ class Products extends Component {
               <div className="card-image">
               <img src="https://materializecss.com/images/sample-1.jpg"/>
               </div>
-              <CardTitle>This Product Name</CardTitle>
+              <CardTitle>Clearview</CardTitle>
               <p>kjdsflsjfoijef</p>
               </Card>
             </Col>
@@ -61,7 +61,7 @@ class Products extends Component {
               <div className="card-image">
               <img src="https://materializecss.com/images/sample-1.jpg"/>
               </div>
-              <CardTitle>This Product Name</CardTitle>
+              <CardTitle>Rhinofreeze</CardTitle>
               <p>kjdsflsjfoijef</p>
               </Card>
             </Col>
