@@ -1,22 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "react-materialize";
+import logo from "../../images/logo.png"
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Navbar() {
   return (
     <nav style={{backgroundColor: "#260688"}} className="navbar navbar-expand-lg navbar-light bg-light">
-      <Link className="navbar-brand" to="/">
-        Company Name Here
+      <div className="center">
+      <Link className="navbar-brand" to="/" style={{fontSize: "4em", fontFamily: "impact, fantasy"}}>
+        ENT Technics
       </Link>
+      </div>
       <div>
         <ul className="navbar-nav">
           <li className="nav-item">
           <Button
-          node="button"
+          node="a"
           waves="light"
           className="indigo"
-          style={{marginLeft: "20px"}}
+          style={{marginLeft: "5%"}}
           >
             <Link
               to="/"
@@ -32,10 +35,10 @@ function Navbar() {
           </li>
           <li className="nav-item">
           <Button
-          node="button"
+          node="a"
           waves="light"
           className="indigo"
-          style={{marginLeft: "20px"}}
+          style={{marginLeft: "5%"}}
           >
             <Link
               to="/Products"
@@ -47,10 +50,10 @@ function Navbar() {
           </li>
           <li className="nav-item">
           <Button
-          node="button"
+          node="a"
           waves="light"
           className="indigo"
-          style={{marginLeft: "20px"}}
+          style={{marginLeft: "5%"}}
           >
             <Link
               to="/Contact"
@@ -62,10 +65,10 @@ function Navbar() {
           </li>
           <li className="nav-item">
           <Button
-          node="button"
+          node="a"
           waves="light"
           className="indigo"
-          style={{marginLeft: "20px"}}
+          style={{marginLeft: "5%"}}
           >
             <Link
               to="/Login"
@@ -76,6 +79,11 @@ function Navbar() {
           </Button>
           </li>
         </ul>
+        <img 
+        style={{float: "right", marginRight:"50px", width:"auto", height:70}} 
+        src={logo} 
+        alt="logo"
+        />
       </div>
     </nav>
   );

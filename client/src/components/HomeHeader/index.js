@@ -1,16 +1,29 @@
 import React from "react";
-import { Col } from "react-materialize";
-import homeheaderpic from "../../images/homeheader.png"
+import { Parallax } from "react-materialize";
+import Jumbotron from "../../components/Jumbotron";
+import homeheaderpic from "../../images/06.png";
+import pictwo from "../../images/29.jpg";
 
 function HomeHeader() {
     return (
-        <Col xl={12} s={12}>
-            <img 
-            style={{width: "100%", height: "auto"}} 
-            src={homeheaderpic} 
-            alt=""
-            />
-        </Col>
+    <div>
+        <Parallax
+            image={<img alt="" src={homeheaderpic} style={{width: "auto", height: "auto"}}/>}
+            options={{
+            responsiveThreshold: 1
+            }}
+        />
+        <Jumbotron>
+            <h1 style={{color:"white"}}>About Us</h1>
+            <h4 style={{color:"white"}}>In 2021, our company started out....</h4>
+        </Jumbotron>
+        <Parallax
+            image={<img alt="" src={pictwo} style={{width: "auto", height: "auto"}}/>}
+            options={{
+            responsiveThreshold: 1
+            }}
+        />
+    </div>
     );
 }
 
