@@ -11,6 +11,16 @@ import Rhinofreeze from "../images/5.png";
 import "./style.css";
 
 class Products extends Component {
+  state = {
+    products: {}
+  };
+
+  componentDidMount() {
+    API.products()
+      .then(res => this.setState({ products: res.data }))
+      .catch(err => console.log(err));
+  }
+
   render() {
     return (
       <div>
