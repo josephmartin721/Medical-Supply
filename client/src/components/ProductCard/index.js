@@ -1,26 +1,38 @@
 import React from "react";
+import imgurl from "../../images";
 
 function ProductCard(props) {
-  return (
-    <div className="card">
-      <div className="img-container">
-        <img alt={props.name} src={props.image} />
-      </div>
-      <div className="content">
-        <ul>
-          <li>
-            <strong>Name:</strong> {props.name}
-          </li>
-          <li>
-            <strong>Occupation:</strong> {props.occupation}
-          </li>
-          <li>
-            <strong>Location:</strong> {props.location}
-          </li>
-        </ul>
-      </div>
-    </div>
-  );
+    return (
+        <Col s={4} className="center">
+            <Card>
+            <div className="card-image">
+                <img src={require(`../../images${props.id}.png`)}/>
+            </div>
+            <CardTitle>{props.name}</CardTitle>
+            <p>{props.slug}</p>
+            <Link to={`/products/:${props.id}`}>
+                <Button
+                node="button"
+                waves="light"
+                className="indigo btn-small"
+                style={{marginBottom: "5px"}}
+                >
+                View
+                </Button>
+            </Link>
+            <br/>
+            <Link to={"/contact"}>
+                <Button 
+                node="button"
+                waves="light"
+                className="indigo btn-small"
+                >
+                Schedule a Meeting
+                </Button>
+            </Link>
+            </Card>
+        </Col>
+    );
 }
 
 export default ProductCard;
