@@ -18,13 +18,23 @@ const Register = () => {
   // Note: This does not actually do anything yet:
   function handleFormSubmit(event) {
       event.preventDefault();
-      if (formObject.email && formObject.password) {
+      if (formObject.username && formObject.password && formObject.first && formObject.last && formObject.dea && formObject.address && formObject.city && formObject.state && formObject.zip && formObject.phone && formObject.email) {
       API.register({
-          email: formObject.email,
-          password: formObject.password,
+        username: formObject.username,
+        password: formObject.password,
+        first: formObject.first,
+        last: formObject.last,
+        dea: formObject.dea,
+        practice: formObject.practice,
+        address: formObject.address,
+        city: formObject.city,
+        state: formObject.state,
+        zip: formObject.zip,
+        phone: formObject.phone,
+        email: formObject.email,
       })
-          .then(res => loadBooks())
-          .catch(err => console.log(err));
+        .then(res => res.redirect("/home"))
+        .catch(err => console.log(err));
       }
   };
 
@@ -91,7 +101,7 @@ const Register = () => {
             />
             <Input
             onChange={handleInputChange}
-            name="zipcode"
+            name="zip"
             placeholder="Zip Code"
             />
             <Input
