@@ -3,7 +3,7 @@ import imgurl from "../../images";
 
 function ProductCard(props) {
     return (
-        <Col s={4} className="center">
+        <Col m={4} s={6} className="center">
             <Card>
             <div className="card-image">
                 <img src={require(`../../images${props.id}.png`)}/>
