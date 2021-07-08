@@ -3,6 +3,7 @@ import { Row, Col, Card, CardTitle } from "react-materialize";
 import { Input, FormBtn } from "../components/Form";
 import background from "../images/background.png";
 import headerpic from "../images/30.jpg";
+import API from "../utils/API";
 
 const Register = () => {
   const [formObject, setFormObject] = useState({})
@@ -15,17 +16,17 @@ const Register = () => {
   
   // When the form is submitted, user & password must be authenticated
   // Note: This does not actually do anything yet:
-  // function handleFormSubmit(event) {
-  //     event.preventDefault();
-  //     if (formObject.email && formObject.password) {
-  //     API.authenticate({
-  //         email: formObject.email,
-  //         password: formObject.password,
-  //     })
-  //         .then(res => loadBooks())
-  //         .catch(err => console.log(err));
-  //     }
-  // };
+  function handleFormSubmit(event) {
+      event.preventDefault();
+      if (formObject.email && formObject.password) {
+      API.authenticate({
+          email: formObject.email,
+          password: formObject.password,
+      })
+          .then(res => loadBooks())
+          .catch(err => console.log(err));
+      }
+  };
 
   return (
     <Col xl={12} s={12}>
@@ -106,7 +107,7 @@ const Register = () => {
             <FormBtn
                 style={{marginTop:"25px"}}
               disabled={!(formObject.username && formObject.password && formObject.first && formObject.last && formObject.dea && formObject.address && formObject.city && formObject.state && formObject.zip && formObject.phone && formObject.email)}
-            //   onClick={handleFormSubmit}
+              onClick={handleFormSubmit}
             >
               Submit
             </FormBtn>
