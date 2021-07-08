@@ -7,7 +7,7 @@ import API from "../utils/API";
 
 const Register = () => {
   const [formObject, setFormObject] = useState({})
-  const [errObject, setErrObject] = useState({})
+  const [errorMessage, setErrorMessage] = useState("")
 
   // Handles updating component state when the user types into the input field
   function handleInputChange(event) {
@@ -16,7 +16,6 @@ const Register = () => {
   };
   
   // When the form is submitted, user & password must be authenticated
-  // Note: This does not actually do anything yet:
   function handleFormSubmit(event) {
       event.preventDefault();
       if (formObject.username && formObject.password && formObject.first && formObject.last && formObject.dea && formObject.address && formObject.city && formObject.state && formObject.zip && formObject.phone && formObject.email) {
@@ -35,7 +34,7 @@ const Register = () => {
         email: formObject.email,
       })
         .then(res => res.redirect("/home"))
-        .catch(err => console.log(err));
+        .catch(err => {setErrorMessage({errorMessage: err.message});})
       }
   };
 
@@ -123,6 +122,7 @@ const Register = () => {
               Submit
             </FormBtn>
             </form>
+            {errorMessage && <div className="error"> {errorMessage} </div>}
           </Card>
         </Col>
         <Col s={2}></Col>
