@@ -17,9 +17,9 @@ const Login = () => {
   // When the form is submitted, user & password must be authenticated
   function handleFormSubmit(event) {
       event.preventDefault();
-      if (formObject.email && formObject.password) {
+      if (formObject.username && formObject.password) {
       API.getMed({
-          email: formObject.email,
+          email: formObject.username,
           password: formObject.password,
       })
           .then(res => res.redirect("/home"))
@@ -57,7 +57,7 @@ const Login = () => {
             placeholder="Password"
             />
             <FormBtn
-              disabled={!(formObject.email && formObject.password)}
+              disabled={!(formObject.username && formObject.password)}
               onClick={handleFormSubmit}
             >
               Submit
