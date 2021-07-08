@@ -4,10 +4,10 @@ import { Row, Col, Card, CardTitle, Button } from "react-materialize";
 import background from "../images/background.png";
 import API from "../utils/API";
 import ProductCard from "../components/ProductCard";
-import Clearview from "../images/Clearview.jpg";
-import HDS from "../images/HDS.png";
-import DisposableBSS from "../images/DisposableBSS.jpg";
-import Rhinofreeze from "../images/Rhinofreeze.png";
+import Clearview from "../images/4.png";
+import HDS from "../images/3.png";
+import DisposableBSS from "../images/2.png";
+import Rhinofreeze from "../images/5.png";
 import "./style.css";
 
 class Products extends Component {

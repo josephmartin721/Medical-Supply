@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Row, Col, Card, CardTitle } from "react-materialize";
 import { Input, FormBtn } from "../components/Form";
 import background from "../images/background.png";
-import headerpic from "../images/37.jpg";
+import headerpic from "../images/loginpic.jpg";
 import API from "../utils/API";
 
 const Login = () => {

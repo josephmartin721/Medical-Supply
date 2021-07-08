@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Row, Col, Card, CardTitle } from "react-materialize";
 import { Input, FormBtn } from "../components/Form";
 import background from "../images/background.png";
-import headerpic from "../images/30.jpg";
+import headerpic from "../images/exampic.jpg";
 import API from "../utils/API";
 
 const Register = () => {
