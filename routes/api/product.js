@@ -6,7 +6,8 @@ router.route("/")
   .get(Product.findAll)
   .post(Product.create);
 
-router
+// api/products/id
+  router
   .route("/:id")
   .get(Product.findById)
   .put(Product.update)
