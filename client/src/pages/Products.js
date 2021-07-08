@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Row, Col, Card, CardTitle, Button } from "react-materialize";
 import background from "../images/background.png";
-import * as API from "./utils/API";
+import API from "../utils/API";
 import ProductCard from "../components/ProductCard";
 import Clearview from "../images/4.png";
 import HDS from "../images/3.png";
@@ -28,14 +28,14 @@ const Products = () => {
       <div className="container contain" id="contain">
       {/* New Mapping Function with new ProductCard component */}
       <Row>
-        {products.map(product => (
+        {productState.map(product => (
         <ProductCard 
-        id={products.id}
-        name={products.name}
-        slug={products.slug}
-        description={products.description}
-        use={products.use}
-        benefits={products.benefits}
+        id={product.id}
+        name={product.name}
+        slug={product.slug}
+        description={product.description}
+        use={product.use}
+        benefits={product.benefits}
         />))
         }
       </Row>
