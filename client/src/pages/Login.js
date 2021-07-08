@@ -7,6 +7,7 @@ import API from "../utils/API";
 
 const Login = () => {
   const [formObject, setFormObject] = useState({})
+  const [errObject, setErrObject] = useState({})
 
   // Handles updating component state when the user types into the input field
   function handleInputChange(event) {
@@ -19,11 +20,11 @@ const Login = () => {
       event.preventDefault();
       if (formObject.username && formObject.password) {
       API.login({
-          email: formObject.username,
+          email: formObject.username, 
           password: formObject.password,
       })
           .then(res => res.redirect("/home"))
-          .catch(err => console.log(err));
+          .catch(err => setErrObject(err));
       }
   };
 

@@ -7,6 +7,7 @@ import API from "../utils/API";
 
 const Register = () => {
   const [formObject, setFormObject] = useState({})
+  const [errObject, setErrObject] = useState({})
 
   // Handles updating component state when the user types into the input field
   function handleInputChange(event) {
@@ -115,7 +116,7 @@ const Register = () => {
             placeholder="Email"
             />
             <FormBtn
-                style={{marginTop:"25px"}}
+              style={{marginTop:"25px"}}
               disabled={!(formObject.username && formObject.password && formObject.first && formObject.last && formObject.dea && formObject.address && formObject.city && formObject.state && formObject.zip && formObject.phone && formObject.email)}
               onClick={handleFormSubmit}
             >
