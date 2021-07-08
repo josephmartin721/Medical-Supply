@@ -18,7 +18,7 @@ const Login = () => {
   function handleFormSubmit(event) {
       event.preventDefault();
       if (formObject.username && formObject.password) {
-      API.getMed({
+      API.login({
           email: formObject.username,
           password: formObject.password,
       })
