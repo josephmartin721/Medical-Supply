@@ -19,7 +19,7 @@ const Register = () => {
   function handleFormSubmit(event) {
       event.preventDefault();
       if (formObject.email && formObject.password) {
-      API.authenticate({
+      API.register({
           email: formObject.email,
           password: formObject.password,
       })
