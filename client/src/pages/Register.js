@@ -3,9 +3,11 @@ import { Row, Col, Card, CardTitle } from "react-materialize";
 import { Input, FormBtn } from "../components/Form";
 import background from "../images/background.png";
 import headerpic from "../images/30.jpg";
+import API from "../utils/API";
 
 const Register = () => {
   const [formObject, setFormObject] = useState({})
+  const [errObject, setErrObject] = useState({})
 
   // Handles updating component state when the user types into the input field
   function handleInputChange(event) {
@@ -15,17 +17,27 @@ const Register = () => {
   
   // When the form is submitted, user & password must be authenticated
   // Note: This does not actually do anything yet:
-  // function handleFormSubmit(event) {
-  //     event.preventDefault();
-  //     if (formObject.email && formObject.password) {
-  //     API.authenticate({
-  //         email: formObject.email,
-  //         password: formObject.password,
-  //     })
-  //         .then(res => loadBooks())
-  //         .catch(err => console.log(err));
-  //     }
-  // };
+  function handleFormSubmit(event) {
+      event.preventDefault();
+      if (formObject.username && formObject.password && formObject.first && formObject.last && formObject.dea && formObject.address && formObject.city && formObject.state && formObject.zip && formObject.phone && formObject.email) {
+      API.register({
+        username: formObject.username,
+        password: formObject.password,
+        first: formObject.first,
+        last: formObject.last,
+        dea: formObject.dea,
+        practice: formObject.practice,
+        address: formObject.address,
+        city: formObject.city,
+        state: formObject.state,
+        zip: formObject.zip,
+        phone: formObject.phone,
+        email: formObject.email,
+      })
+        .then(res => res.redirect("/home"))
+        .catch(err => console.log(err));
+      }
+  };
 
   return (
     <Col xl={12} s={12}>
@@ -90,7 +102,7 @@ const Register = () => {
             />
             <Input
             onChange={handleInputChange}
-            name="zipcode"
+            name="zip"
             placeholder="Zip Code"
             />
             <Input
@@ -104,9 +116,9 @@ const Register = () => {
             placeholder="Email"
             />
             <FormBtn
-                style={{marginTop:"25px"}}
+              style={{marginTop:"25px"}}
               disabled={!(formObject.username && formObject.password && formObject.first && formObject.last && formObject.dea && formObject.address && formObject.city && formObject.state && formObject.zip && formObject.phone && formObject.email)}
-            //   onClick={handleFormSubmit}
+              onClick={handleFormSubmit}
             >
               Submit
             </FormBtn>
