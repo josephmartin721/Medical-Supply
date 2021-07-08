@@ -9,5 +9,8 @@ export default {
     },
     logout: function() {
         return axios.post("api/users/logout")
+    },
+    register: function() {
+        return axios.post("api/users")
     }
 }
