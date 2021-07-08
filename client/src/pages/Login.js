@@ -3,9 +3,11 @@ import { Row, Col, Card, CardTitle } from "react-materialize";
 import { Input, FormBtn } from "../components/Form";
 import background from "../images/background.png";
 import headerpic from "../images/37.jpg";
+import API from "../utils/API";
 
 const Login = () => {
   const [formObject, setFormObject] = useState({})
+  const [errObject, setErrObject] = useState({})
 
   // Handles updating component state when the user types into the input field
   function handleInputChange(event) {
@@ -14,18 +16,17 @@ const Login = () => {
   };
   
   // When the form is submitted, user & password must be authenticated
-  // Note: This does not actually do anything yet:
-  // function handleFormSubmit(event) {
-  //     event.preventDefault();
-  //     if (formObject.email && formObject.password) {
-  //     API.authenticate({
-  //         email: formObject.email,
-  //         password: formObject.password,
-  //     })
-  //         .then(res => loadBooks())
-  //         .catch(err => console.log(err));
-  //     }
-  // };
+  function handleFormSubmit(event) {
+      event.preventDefault();
+      if (formObject.username && formObject.password) {
+      API.login({
+          email: formObject.username, 
+          password: formObject.password,
+      })
+          .then(res => res.redirect("/home"))
+          .catch(err => setErrObject(err));
+      }
+  };
 
   return (
     <Col xl={12} s={12}>
@@ -57,8 +58,8 @@ const Login = () => {
             placeholder="Password"
             />
             <FormBtn
-              disabled={!(formObject.email && formObject.password)}
-            //   onClick={handleFormSubmit}
+              disabled={!(formObject.username && formObject.password)}
+              onClick={handleFormSubmit}
             >
               Submit
             </FormBtn>
