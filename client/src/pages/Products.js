@@ -19,9 +19,16 @@ class Products extends Component {
         <div className="container contain" id="contain">
         {/* New Mapping Function with new ProductCard component */}
         <Row>
-          <ProductCard>
-
-          </ProductCard>
+          {products.map(product => (
+          <ProductCard 
+          id={products.id}
+          name={products.name}
+          slug={products.slug}
+          description={products.description}
+          use={products.use}
+          benefits={products.benefits}
+          />))
+          }
         </Row>
         {/* Original "Hard Coded" Product Cards*/}
         <Row >
