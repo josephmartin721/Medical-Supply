@@ -2,23 +2,27 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Row, Col, Card, CardTitle, Button } from "react-materialize";
 import background from "../images/background.png";
-import API from "../utils/API";
 import ProductCard from "../components/ProductCard";
 import Clearview from "../images/4.png";
 import HDS from "../images/3.png";
 import DisposableBSS from "../images/2.png";
 import Rhinofreeze from "../images/5.png";
 import "./style.css";
+// Commented out for now - needs to be brought back in when API call is functioning
+// import API from "../utils/API";
+// This is just to mock an API call and should be deleted when the true API call is functioning
+import products from "./products.json"
 
 const Products = () => {
-  const [productState, setProductState] = useState();
+  // Commented out for now - needs to be brought back in when API call is functioning
+  // const [productState, setProductState] = useState();
 
-  useEffect(() => {
-    API.products.then((res) => {
-      setProductState(res)
-      .catch(err => console.log(err));
-    });
-  }, []);
+  // useEffect(() => {
+  //   API.products.then((res) => {
+  //     setProductState(res)
+  //     .catch(err => console.log(err));
+  //   });
+  // }, []);
 
   return (
     <div>
@@ -27,7 +31,8 @@ const Products = () => {
       <div className="container contain" id="contain">
       {/* New Mapping Function with new ProductCard component */}
       <Row>
-        {productState.map(product => (
+        {/* When API call is functioning, replace "products" with "productState" */}
+        {products.map(product => (
         <ProductCard 
         id={product.id}
         name={product.name}
