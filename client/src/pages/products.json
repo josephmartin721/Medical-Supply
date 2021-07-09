@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "image": "a",
         "name": "Total Image",
         "slug": "3D Image guidance",
         "description": "Innovative 3D Navigation – This is a real-time, three-dimensional navigation system for ENT procedures performed in the operating room and or ENT office. The electromagnetic image-guided navigation system is used for endoscopic sinus procedures and surgeries like Balloon Sinuplasty which treats chronic sinusitis. This device incorporates microsensor technology, innovative tracking hardware and software tools to enable precise placement of surgical instruments and devices relative to the patient’s preoperative CT scan.",
@@ -9,6 +10,7 @@
     },
     {
         "id": 2,
+        "image": "b",
         "name": "Disposable BSS – Balloon Sinuplasty System",
         "slug": "Balloon Sinuplasty System",
         "description": "Hand-held balloon device that inflates inside the sinus for one-time access for dilation and irrigation. This device is intended to provide a means to access the sinus space and illuminate within and transilluminate across nasal and sinus structures to clear the sinuses. ",
@@ -17,6 +19,7 @@
     },
     {
         "id": 3,
+        "image": "c",
         "name": "HDS - Headroom Dilation System",
         "slug": "Excise bone and soft tissue",
         "description": "Excise Ethmoid sinus",
@@ -25,6 +28,7 @@
     },
     {
         "id": 4,
+        "image": "d",
         "name": "Clearview",
         "slug": "Nasal Endoscope",
         "description": "Multi-angular Endoscope with adjustable light & miniature camera lens at the end, specifically designed for viewing inside the nasal cavity and sinuses.",
@@ -33,6 +37,7 @@
     },
     {
         "id": 5,
+        "image": "e",
         "name": "Rhinofreeze",
         "slug": "Nasal Cavity Cryotherapy",
         "description": "Cryotherapy to the nose. Cold temperatures going directly to the nerves inside the nose to alleviate symptoms. Minimally invasive and targets the source of symptoms for lasting relief. Available in-office, minimal recovery time and post-treatment care, and often times provides long-lasting symptom relief.",

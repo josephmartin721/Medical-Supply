@@ -2,7 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Row, Col, Card, CardTitle, Button } from "react-materialize";
 import background from "../images/background.png";
-import ProductCard from "../components/ProductCard";
+import a from "../images/1.png";
+import b from "../images/2.png";
+import c from "../images/3.png";
+import d from "../images/4.png";
+import e from "../images/5.png";
 import Clearview from "../images/4.png";
 import HDS from "../images/3.png";
 import DisposableBSS from "../images/2.png";
@@ -33,16 +37,40 @@ const Products = () => {
       <Row>
         {/* When API call is functioning, replace "products" with "productState" */}
         {products.map(product => (
-        <ProductCard 
-        id={product.id}
-        name={product.name}
-        slug={product.slug}
-        description={product.description}
-        use={product.use}
-        benefits={product.benefits}
-        />))
-        }
+          <Col m={4} s={6} className="center">
+          <Card
+          header={<CardTitle image={`url${product.image}`}>{product.name}</CardTitle>}
+          >
+          {/* <div className="card-image">
+              <img src={`url(${props.image}`}/>
+          </div>
+          <CardTitle>{props.name}</CardTitle> */}
+          <p>{product.slug}</p>
+          <Link to={`/products/:${product.id}`}>
+              <Button
+              node="button"
+              waves="light"
+              className="indigo btn-small"
+              style={{marginBottom: "5px"}}
+              >
+              View
+              </Button>
+          </Link>
+          <br/>
+          <Link to={"/contact"}>
+              <Button 
+              node="button"
+              waves="light"
+              className="indigo btn-small"
+              >
+              Schedule a Meeting
+              </Button>
+          </Link>
+          </Card>
+      </Col>
+      ))}
       </Row>
+      
       {/* Original "Hard Coded" Product Cards*/}
       <Row >
         <Col s={4} className="center">
