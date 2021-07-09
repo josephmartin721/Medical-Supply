@@ -1,8 +1,12 @@
 const mongoose = require("mongoose");
-const { Product, Shop, User } = require("../models");
+const { Product, Shop, User } = require("../../models");
 const axios = require("axios");
 const chalk = require("chalk");
 const bcrypt = require("bcrypt");
+require("dotenv").config();
+
+const rolesData = require("./roles");
+const productsData = require("./products");
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/medicalsupply",
     {
@@ -12,48 +16,24 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/medicalsupply",
     }
 );
 
-const roles = ["owner", "sales", "sales"];
-const productsData = [
-    {
-        name: "Nasal Endoscope",
-        slug: "nasal-endoscope",
-        sku: "1",
-        description: "Camera to look inside nasal cavity"
-    },
-    {
-        name: "Spin Plus Balloon Sinuplasty System",
-        slug: "spin-plus-balloon-sinuplasy-system",
-        sku: "2",
-        description: "Balloon that inflates inside sinus for one-time access"
-    },
-    {
-        name: "Multi-Sinus Dilation",
-        slug: "multi-sinus-dilation",
-        sku: "3",
-        description: "Balloon mechanism that is for multi-sinus"
-    },
-    {
-        name: "Clarifix",
-        slug: "clarifix",
-        sku: "4",
-        description: "Cryotherapy to the nose. Cold temperatures going directly to the nerves inside the nose to alleviate symptoms"
-    }
-]
+const db = mongoose.connection;
 
 const seed = async function () {
 
     try {
+        await db.dropDatabase();
         // get 3 random users
-        const usersData = await axios.get("https://randomuser.me/api/?results=3");
-        // add roles and passwords to users
+        const usersData = await axios.get("https://randomuser.me/api/?results=4");
+        // add roles to users
         const users = usersData.data.results.map((user, idx) => {
-            hashPass = bcrypt.hashSync("password#1", 10);
-            return { ...user, role: roles[idx], password: hashPass }
+            let hashPass = bcrypt.hashSync("password#1", 10);
+            return { ...user, role: rolesData.roles[idx], password: hashPass };
         });
 
         // insert users in db
         const newUsers = await User.insertMany(users);
         console.log(chalk.green(`Inserted ${newUsers.length} users in db.`));
+        
         // insert shop in db
         const newShop = await Shop.create({
             name: "The Medical Depot",
@@ -76,7 +56,6 @@ const seed = async function () {
     } finally {
         process.exit(0);
     }
-
 }
 
 seed();
