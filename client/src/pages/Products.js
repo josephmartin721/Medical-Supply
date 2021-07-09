@@ -11,15 +11,14 @@ import Rhinofreeze from "../images/5.png";
 import "./style.css";
 
 const Products = () => {
-  const [productState, setProductState] = useState({
-    products: {}
-  });
+  const [productState, setProductState] = useState();
 
   useEffect(() => {
     API.products.then((res) => {
       setProductState(res)
       .catch(err => console.log(err));
-  });},[]);
+    });
+  }, []);
 
   return (
     <div>
