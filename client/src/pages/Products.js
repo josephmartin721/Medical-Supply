@@ -25,7 +25,7 @@ const Products = () => {
       <Row style={{backgroundColor:"#260688"}}>
         {/* When API call is functioning, replace "products" with "productState" */}
         {products.map(product => (
-          <Col s={6} className="center">
+          <Col s={5} className="center" style={{margin: "4%"}}>
           <Card
           header={<CardTitle image={product.image} ></CardTitle>}
           >
