@@ -27,8 +27,7 @@ const Products = () => {
     <div>
       <div className="section" style={{backgroundImage: `url(${background})`, height: 100}}>
       </div>
-      <div className="container contain" id="contain">
-      {/* New Mapping Function with new ProductCard component */}
+      <div className="container contain" id="contain" style={{marginTop: "100px"}}>
       <Row>
         {/* When API call is functioning, replace "products" with "productState" */}
         {products.map(product => (
