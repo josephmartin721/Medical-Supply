@@ -9,7 +9,6 @@ router.route("/")
 // api/products/id
   router
   .route("/:id")
-  // .get(() => console.log("jk"))
    .get(Product.findById)
   .put(Product.update)
   .delete(Product.remove);

@@ -3,9 +3,6 @@ import axios from "axios";
 import { Row, Col, Card, CardTitle, Button } from "react-materialize";
 import { Link, useParams } from "react-router-dom";
 import background from "../images/background.png";
-import ProductDetail from "../components/ProductDetail/ProductDetail";
-import Products from "./Products";
-import MedProducts from "./products.json";
 import API from "../utils/API";
 
 
