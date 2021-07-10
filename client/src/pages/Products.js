@@ -2,11 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Row, Col, Card, CardTitle, Button } from "react-materialize";
 import background from "../images/background.png";
-import a from "../images/1.png";
-import b from "../images/2.png";
-import c from "../images/3.png";
-import d from "../images/4.png";
-import e from "../images/5.png";
 // Commented out for now - needs to be brought back in when API call is functioning
 // import API from "../utils/API";
 // This is just to mock an API call and should be deleted when the true API call is functioning
