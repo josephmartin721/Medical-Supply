@@ -4,11 +4,11 @@ export default {
     getMed: function() {
         return axios.get("api/")
     },
-    login: function() {
-        return axios.post("api/users/login")
+    login: function(params) {
+        return axios.post("api/users/login", params)
     },
-    logout: function() {
-        return axios.post("api/users/logout")
+    logout: function(params) {
+        return axios.post("api/users/logout", params)
     },
     register: function() {
         return axios.post("api/users")                    

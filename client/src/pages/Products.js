@@ -2,11 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Row, Col, Card, CardTitle, Button } from "react-materialize";
 import background from "../images/background.png";
-import a from "../images/1.png";
-import b from "../images/2.png";
-import c from "../images/3.png";
-import d from "../images/4.png";
-import e from "../images/5.png";
 // Commented out for now - needs to be brought back in when API call is functioning
 // import API from "../utils/API";
 // This is just to mock an API call and should be deleted when the true API call is functioning
@@ -28,9 +23,9 @@ const Products = (props) => {
     <div>
       <div className="section" style={{backgroundImage: `url(${background})`, height: 100}}>
       </div>
-      <div className="container contain" id="contain" style={{marginTop: "100px"}}>
-      <Row>
+      <Row style={{backgroundColor:"#260688"}}>
         {/* When API call is functioning, replace "products" with "productState" */}
+
         {MedProducts.map(product => (
           <Col m={4} s={6} className="center">
           <Card
@@ -42,6 +37,16 @@ const Products = (props) => {
           <Link to={`products/${product._id}`
 
           }>
+
+        {products.map(product => (
+          <Col s={5} className="center" style={{margin: "4%"}}>
+          <Card
+          header={<CardTitle image={product.image} ></CardTitle>}
+          >
+          <h5 style={{color:"#260688"}}>{product.name}</h5>
+          <p>{product.slug}</p>
+          <Link to={`/products/:${product_.id}`}>
+
               <Button
               node="button"
               waves="light"
@@ -65,7 +70,6 @@ const Products = (props) => {
       </Col>
       ))}
       </Row>
-      </div>
     </div>
   )
 }
