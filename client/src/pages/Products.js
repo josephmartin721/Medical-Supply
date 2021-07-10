@@ -34,18 +34,19 @@ const Products = (props) => {
           <p>Slug: {product.slug}</p>
           <p>Name: {product.name}</p>
 
-          <Link to={`products/${product._id}`
+          <Link to={`products/${product._id}`} />
+          </Card>
+          </Col>
+        ))}
 
-          }>
-
-        {products.map(product => (
+        {MedProducts.map(product => (
           <Col s={5} className="center" style={{margin: "4%"}}>
           <Card
           header={<CardTitle image={product.image} ></CardTitle>}
           >
           <h5 style={{color:"#260688"}}>{product.name}</h5>
           <p>{product.slug}</p>
-          <Link to={`/products/:${product_.id}`}>
+          <Link to={`/products/:${product._id}`}>
 
               <Button
               node="button"
@@ -67,8 +68,8 @@ const Products = (props) => {
               </Button>
           </Link>
           </Card>
-      </Col>
-      ))}
+          </Col>
+          ))}
       </Row>
     </div>
   )
