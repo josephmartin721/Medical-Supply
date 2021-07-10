@@ -38,38 +38,6 @@ const Products = (props) => {
           </Card>
           </Col>
         ))}
-
-        {MedProducts.map(product => (
-          <Col s={5} className="center" style={{margin: "4%"}}>
-          <Card
-          header={<CardTitle image={product.image} ></CardTitle>}
-          >
-          <h5 style={{color:"#260688"}}>{product.name}</h5>
-          <p>{product.slug}</p>
-          <Link to={`/products/:${product._id}`}>
-
-              <Button
-              node="button"
-              waves="light"
-              className="indigo btn-small"
-              style={{marginBottom: "5px"}}
-              >
-              View
-              </Button>
-          </Link>
-          <br/>
-          <Link to={"/contact"}>
-              <Button 
-              node="button"
-              waves="light"
-              className="indigo btn-small"
-              >
-              Schedule a Meeting
-              </Button>
-          </Link>
-          </Card>
-          </Col>
-          ))}
       </Row>
     </div>
   )
