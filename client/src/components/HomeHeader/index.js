@@ -3,6 +3,10 @@ import { Parallax, Carousel } from "react-materialize";
 import Jumbotron from "../../components/Jumbotron";
 import homeheaderpic from "../../images/brain.png";
 import pictwo from "../../images/surgery.jpg";
+import caro01 from "../../images/caro01.png";
+import caro02 from "../../images/caro02.png";
+import caro03 from "../../images/caro03.jpg";
+import caro04 from "../../images/caro04.jpg";
 
 function HomeHeader() {
     return (
@@ -19,11 +23,10 @@ function HomeHeader() {
             <Carousel
             carouselId="Carousel-2"
             images={[
-                'https://picsum.photos/200/300?image=0',
-                'https://picsum.photos/200/300?image=1',
-                'https://picsum.photos/200/300?image=2',
-                'https://picsum.photos/200/300?image=3',
-                'https://picsum.photos/200/300?image=4'
+                `${caro01}`,
+                `${caro02}`,
+                `${caro03}`,
+                `${caro04}`
             ]}
             options={{
                 dist: -100,
