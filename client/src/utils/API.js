@@ -12,5 +12,8 @@ export default {
     },
     register: function() {
         return axios.post("api/users")                    
+    },
+    products: function() {
+        return axios.get("api/products")
     }
 }

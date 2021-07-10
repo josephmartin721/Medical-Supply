@@ -2,30 +2,30 @@ import React, { useState } from "react";
 import { Row, Col, Card, CardTitle } from "react-materialize";
 import { Input, FormBtn } from "../components/Form";
 import background from "../images/background.png";
-import headerpic from "../images/37.jpg";
+import headerpic from "../images/loginpic.jpg";
 import API from "../utils/API";
 
 const Login = () => {
   const [formObject, setFormObject] = useState({})
-  const [errObject, setErrObject] = useState({})
+  const [errorMessage, setErrorMessage] = useState("")
 
   // Handles updating component state when the user types into the input field
   function handleInputChange(event) {
-      const { name, value } = event.target;
-      setFormObject({...formObject, [name]: value})
+    const { name, value } = event.target;
+    setFormObject({...formObject, [name]: value})
   };
   
   // When the form is submitted, user & password must be authenticated
   function handleFormSubmit(event) {
-      event.preventDefault();
-      if (formObject.username && formObject.password) {
-      API.login({
-          email: formObject.username, 
-          password: formObject.password,
-      })
-          .then(res => res.redirect("/home"))
-          .catch(err => setErrObject(err));
-      }
+    event.preventDefault();
+    if (formObject.username && formObject.password) {
+    API.login({
+      email: formObject.username, 
+      password: formObject.password,
+    })
+      .then(res => res.redirect("/home"))
+      .catch(err => {setErrorMessage({errorMessage: err.message});})
+    }
   };
 
   return (
@@ -64,6 +64,7 @@ const Login = () => {
               Submit
             </FormBtn>
             </form>
+            {errorMessage && <div className="error"> {errorMessage} </div>}
           </Card>
         </Col>
         <Col s={2}></Col>

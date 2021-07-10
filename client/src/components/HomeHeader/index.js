@@ -1,8 +1,8 @@
 import React from "react";
 import { Parallax } from "react-materialize";
 import Jumbotron from "../../components/Jumbotron";
-import homeheaderpic from "../../images/06.png";
-import pictwo from "../../images/29.jpg";
+import homeheaderpic from "../../images/brain.png";
+import pictwo from "../../images/surgery.jpg";
 
 function HomeHeader() {
     return (
