@@ -15,5 +15,8 @@ export default {
     },
     products: function() {
         return axios.get("api/products")
+    },
+    productById: function(value) {
+        return axios.get("api/products/"+value)
     }
 }

@@ -10,9 +10,10 @@ import e from "../images/5.png";
 // Commented out for now - needs to be brought back in when API call is functioning
 // import API from "../utils/API";
 // This is just to mock an API call and should be deleted when the true API call is functioning
-import products from "./products.json"
+import MedProducts from "./products.json";
 
-const Products = () => {
+const Products = (props) => {
+  console.log(props)
   // Commented out for now - needs to be brought back in when API call is functioning
   // const [productState, setProductState] = useState();
 
@@ -30,13 +31,17 @@ const Products = () => {
       <div className="container contain" id="contain" style={{marginTop: "100px"}}>
       <Row>
         {/* When API call is functioning, replace "products" with "productState" */}
-        {products.map(product => (
+        {MedProducts.map(product => (
           <Col m={4} s={6} className="center">
           <Card
-          header={<CardTitle image={`url${product.image}`}>{product.name}</CardTitle>}
+          header={<CardTitle image={`url${product.image}`}></CardTitle>}
           >
-          <p>{product.slug}</p>
-          <Link to={`/products/:${product.id}`}>
+          <p>Slug: {product.slug}</p>
+          <p>Name: {product.name}</p>
+
+          <Link to={`products/${product._id}`
+
+          }>
               <Button
               node="button"
               waves="light"

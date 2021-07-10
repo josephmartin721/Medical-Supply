@@ -30,9 +30,9 @@ function App() {
         <Route exact path="/products">
           <Products/>
         </Route>
-        <Route exact path="/products/:id">
-          <ProductId/>
-        </Route>
+        <Route exact path="/products/:id" component={ProductId}/>
+          {/* <ProductId/>
+        </Route> */}
         <Route exact path="/contact">
           <Contact/>
         </Route>
