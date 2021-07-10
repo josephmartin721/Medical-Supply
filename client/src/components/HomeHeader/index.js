@@ -7,6 +7,8 @@ import caro01 from "../../images/caro01.png";
 import caro02 from "../../images/caro02.png";
 import caro03 from "../../images/caro03.jpg";
 import caro04 from "../../images/caro04.jpg";
+import caro05 from "../../images/caro05.png";
+import caro06 from "../../images/caro06.jpg";
 
 function HomeHeader() {
     return (
@@ -27,7 +29,9 @@ function HomeHeader() {
                 `${caro01}`,
                 `${caro02}`,
                 `${caro03}`,
-                `${caro04}`
+                `${caro04}`,
+                `${caro05}`,
+                `${caro06}`
             ]}
             options={{
                 dist: -100,
