@@ -22,11 +22,10 @@ const Products = () => {
     <div>
       <div className="section" style={{backgroundImage: `url(${background})`, height: 100}}>
       </div>
-      <div className="container contain" id="contain" style={{marginTop: "100px"}}>
-      <Row>
+      <Row style={{backgroundColor:"#260688"}}>
         {/* When API call is functioning, replace "products" with "productState" */}
         {products.map(product => (
-          <Col m={4} s={6} className="center">
+          <Col s={6} className="center">
           <Card
           header={<CardTitle image={product.image} ></CardTitle>}
           >
@@ -56,7 +55,6 @@ const Products = () => {
       </Col>
       ))}
       </Row>
-      </div>
     </div>
   )
 }
