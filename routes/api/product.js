@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const Product = require("../../controllers/productController");
 
-// Product routes
+//Product routes
 router.route("/")
   .get(Product.findAll)
   .post(Product.create);
@@ -9,7 +9,7 @@ router.route("/")
 // api/products/id
   router
   .route("/:id")
-  .get(Product.findById)
+   .get(Product.findById)
   .put(Product.update)
   .delete(Product.remove);
 
