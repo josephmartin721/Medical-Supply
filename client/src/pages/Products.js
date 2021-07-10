@@ -33,8 +33,9 @@ const Products = () => {
         {products.map(product => (
           <Col m={4} s={6} className="center">
           <Card
-          header={<CardTitle image={product.image}>{product.name}</CardTitle>}
+          header={<CardTitle image={product.image} ></CardTitle>}
           >
+          <h5 style={{color:"#260688"}}>{product.name}</h5>
           <p>{product.slug}</p>
           <Link to={`/products/:${product.id}`}>
               <Button
