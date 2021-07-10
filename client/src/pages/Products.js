@@ -33,7 +33,7 @@ const Products = () => {
         {products.map(product => (
           <Col m={4} s={6} className="center">
           <Card
-          header={<CardTitle image={`url${product.image}`}>{product.name}</CardTitle>}
+          header={<CardTitle image={product.image}>{product.name}</CardTitle>}
           >
           <p>{product.slug}</p>
           <Link to={`/products/:${product.id}`}>
