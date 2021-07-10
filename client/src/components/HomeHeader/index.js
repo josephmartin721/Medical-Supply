@@ -20,6 +20,7 @@ function HomeHeader() {
         <Jumbotron>
             <h1 style={{color:"white"}}>About Us</h1>
             <h4 style={{color:"white"}}>In 2021, our company started out....</h4>
+            <div style={{marginTop: 100}}>
             <Carousel
             carouselId="Carousel-2"
             images={[
@@ -40,6 +41,7 @@ function HomeHeader() {
                 shift: 0
             }}
             />
+            </div>
         </Jumbotron>
         <Parallax
             image={<img alt="" src={pictwo} style={{width: "auto", height: "auto"}}/>}
