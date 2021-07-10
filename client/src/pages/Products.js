@@ -31,6 +31,7 @@ const Products = (props) => {
           >
           <h5 style={{color:"#260688"}}>{product.name}</h5>
           <p>{product.slug}</p>
+          <p>{product.benefits}</p>
           <Link to={`/products/${product._id}`}>
               <Button
               node="button"
