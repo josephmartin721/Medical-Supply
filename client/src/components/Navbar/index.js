@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button } from "react-materialize";
+import { Button, Col } from "react-materialize";
 import logo from "../../images/logo.png"
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
@@ -13,6 +13,7 @@ function Navbar() {
       </Link>
       </div>
       <div>
+        <Col s={10}>
         <ul className="navbar-nav">
           <li className="nav-item">
           <Button
@@ -20,7 +21,7 @@ function Navbar() {
           node="a"
           waves="light"
           className="indigo"
-          style={{marginLeft: "5%"}}
+          style={{marginLeft: "10%"}}
           >Home
           </Button>
           </li>
@@ -55,11 +56,14 @@ function Navbar() {
           </Button>
           </li>
         </ul>
+        </Col>
+        <Col s={2} style={{verticalAlign:"middle"}}>
         <img 
-        style={{float: "right", marginRight:"50px", width:"auto", height:70}} 
+        style={{float: "right", marginRight:"2%", width:"auto", height:70}} 
         src={logo} 
         alt="logo"
         />
+        </Col>
       </div>
     </nav>
   );
