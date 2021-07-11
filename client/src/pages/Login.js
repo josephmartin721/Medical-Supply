@@ -24,7 +24,7 @@ const Login = () => {
       password: formObject.password,
     })
       .then(res => res.redirect("/home"))
-      .catch(err => {setErrorMessage({errorMessage: err.message});})
+      .catch(err => setErrorMessage(err.message))
     }
   };
 
@@ -55,6 +55,7 @@ const Login = () => {
             <Input
             onChange={handleInputChange}
             name="password"
+            type="password"
             placeholder="Password"
             />
             <FormBtn
