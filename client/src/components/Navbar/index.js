@@ -79,7 +79,7 @@ function Navbar() {
           </Button>
           </li>
         </ul>
-        <img 
+        <img id="logo"
         style={{float: "right", marginRight:"50px", width:"auto", height:70}} 
         src={logo} 
         alt="logo"
