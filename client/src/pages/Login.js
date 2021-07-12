@@ -32,7 +32,7 @@ const Login = () => {
     <Col xl={12} s={12}>
       <div className="section" style={{backgroundImage: `url(${background})`, height: 150}}>
       </div>
-      <Row className="center">
+      <Row className="center" style={{backgroundImage: `url(${background})`}}>
         <Col s={2}></Col>
         <Col s={8} className="center">
           <Card
