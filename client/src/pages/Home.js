@@ -22,8 +22,8 @@ const Home = () => {
                 className="blue-grey darken-1"
                 closeIcon={<Icon>close</Icon>}
                 revealIcon={<Icon>more_vert</Icon>}
-                textClassName="white-text"
-                title="Excellence is our Specialty">
+                textClassName="white-text">
+                    <h6>"Excellence is our Specialty"</h6>
                 </Card>
             </Col>
             <Col s={4} className="center">
@@ -42,8 +42,8 @@ const Home = () => {
                 className="blue-grey darken-1"
                 closeIcon={<Icon>close</Icon>}
                 revealIcon={<Icon>more_vert</Icon>}
-                textClassName="white-text"
-                title="Browse Our Products Here">
+                textClassName="white-text">
+                    <h6>"Browse Our Products Here"</h6>
                 </Card>
             </Col>
         </Row>

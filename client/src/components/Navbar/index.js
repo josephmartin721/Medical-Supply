@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button } from "react-materialize";
+import { Button, Col } from "react-materialize";
 import logo from "../../images/logo.png"
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
@@ -13,77 +13,57 @@ function Navbar() {
       </Link>
       </div>
       <div>
+        <Col s={10}>
         <ul className="navbar-nav">
           <li className="nav-item">
           <Button
+          href="/"
           node="a"
           waves="light"
           className="indigo"
-          style={{marginLeft: "5%"}}
-          >
-            <Link
-              to="/"
-              className={
-                window.location.pathname === "/" || window.location.pathname === "/home"
-                  ? "nav-link active"
-                  : "nav-link"
-              }
-            >
-              Home
-            </Link>
+          style={{marginLeft: "10%"}}
+          >Home
           </Button>
           </li>
           <li className="nav-item">
           <Button
+          href="/Products"
           node="a"
           waves="light"
           className="indigo"
           style={{marginLeft: "5%"}}
-          >
-            <Link
-              to="/Products"
-              className={window.location.pathname === "/Products" ? "nav-link active" : "nav-link"}
-            >
-              Products
-            </Link>
+          >Products
           </Button>
           </li>
           <li className="nav-item">
           <Button
+          href="/Contact"
           node="a"
           waves="light"
           className="indigo"
           style={{marginLeft: "5%"}}
-          >
-            <Link
-              to="/Contact"
-              className={window.location.pathname === "/Contact" ? "nav-link active" : "nav-link"}
-            >
-              Contact Us
-            </Link>
+          >Contact Us
           </Button>
           </li>
           <li className="nav-item">
           <Button
+          href="/Login"
           node="a"
           waves="light"
           className="indigo"
           style={{marginLeft: "5%"}}
-          >
-            <Link
-              to="/Login"
-              className={window.location.pathname === "/Login" ? "nav-link active" : "nav-link"}
-            >
-              Login/Signup
-            </Link>
+          >Login/Signup
           </Button>
           </li>
         </ul>
+        </Col>
+        <Col s={2} style={{verticalAlign:"middle"}}>
         <img 
-        style={{float: "right", marginRight:"50px", width:"auto", height:70}} 
+        style={{float: "right", marginRight:"2%", width:"auto", height:70}} 
         src={logo} 
         alt="logo"
         />
+        </Col>
       </div>
     </nav>
   );

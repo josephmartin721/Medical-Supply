@@ -20,7 +20,7 @@ const Products = (props) => {
 
   return (
     <div>
-      <div className="section" style={{backgroundImage: `url(${background})`, height: 100}}>
+      <div className="section" style={{backgroundImage: `url(${background})`, height: 150}}>
       </div>
       <Row style={{backgroundColor:"#260688"}}>
         {/* When API call is functioning, replace "products" with "productState" */}
