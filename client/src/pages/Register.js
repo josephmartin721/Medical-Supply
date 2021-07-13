@@ -33,8 +33,8 @@ const Register = () => {
         phone: formObject.phone,
         email: formObject.email,
       })
-        .then(res => res.redirect("/home"))
-        .catch(err => {setErrorMessage({errorMessage: err.message});})
+        .then(res => res.redirect([200], "/login"))
+        .catch(err => {setErrorMessage(errorMessage, err.message);})
       }
   };
 
