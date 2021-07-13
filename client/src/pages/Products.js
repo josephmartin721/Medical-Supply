@@ -27,11 +27,13 @@ const Products = (props) => {
         {productState.length >0 ? productState.map(product => (
           <Col s={5} className="center" style={{margin: "4%"}}>
           <Card
-          header={<CardTitle image={product.image} ></CardTitle>}
           >
+          <div className="card-image">
+            <img id="pic" src={product.image} alt="medical device"/>
+          </div>
           <h5 style={{color:"#260688"}}>{product.name}</h5>
-          <p>{product.slug}</p>
-          <p>{product.benefits}</p>
+          <p id="medSpecialty">{product.medicalSpecialtyDescription}</p>
+          <br/>
           <Link to={`/products/${product._id}`}>
               <Button
               node="button"
@@ -44,7 +46,7 @@ const Products = (props) => {
           </Link>
           <br/>
           <Link to={"/contact"}>
-              <Button 
+              <Button
               node="button"
               waves="light"
               className="indigo btn-small"
