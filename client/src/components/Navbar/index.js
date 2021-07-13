@@ -56,6 +56,10 @@ function Navbar() {
           </Button>
           </li>
         </ul>
+        </Col>
+        <Col s={2} style={{verticalAlign:"middle"}}>
+        <img 
+        style={{float: "right", marginRight:"2%", width:"auto", height:70}} 
         src={logo} 
         alt="logo"
         />
