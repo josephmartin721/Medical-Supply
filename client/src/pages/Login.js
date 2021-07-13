@@ -5,7 +5,7 @@ import background from "../images/background.png";
 import headerpic from "../images/loginpic.jpg";
 import API from "../utils/API";
 
-const Login = () => {
+const Login = (props) => {
   const [formObject, setFormObject] = useState({})
   const [errorMessage, setErrorMessage] = useState("")
 
@@ -23,9 +23,9 @@ const Login = () => {
       email: formObject.username, 
       password: formObject.password,
     })
-      .then(res => res.redirect([200], "/"))
-      .catch(err => setErrorMessage(err.message))
-    }
+    .then(_res => props.setLoggedIn(true))
+    .catch(_err => setErrorMessage("Invalid login or password, please try again"))
+  }
   };
 
   return (

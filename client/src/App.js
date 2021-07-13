@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './App.css';
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -10,9 +10,11 @@ import ProductId from "./pages/ProductId";
 import Footer from "./components/Footer";
 
 import NoMatch from "./pages/NoMatch";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(false);
+
   return (
     <Router>
       <div>
@@ -22,7 +24,7 @@ function App() {
           <Home />
         </Route>
         <Route exact path="/login">
-          <Login />
+          {loggedIn ? <Redirect to="/" /> : <Login setLoggedIn={setLoggedIn} />}
         </Route>
         <Route exact path="/register">
           <Register />
