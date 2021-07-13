@@ -22,7 +22,7 @@ const ProductId = (props) => {
     },[])
     return (
         <div>
-            <div style={{backgroundImage: `url(${background})`, height: 100}}></div>
+            <div style={{backgroundImage: `url(${background})`, height: 150}}></div>
             <Row id="idDes">
                 <Col
                  m={10}

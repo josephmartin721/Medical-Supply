@@ -16,49 +16,53 @@ function Navbar() {
         <Col s={10}>
         <ul className="navbar-nav">
           <li className="nav-item">
-          <Button
-          href="/"
-          node="a"
-          waves="light"
-          className="indigo"
-          style={{marginLeft: "10%"}}
-          >Home
-          </Button>
+            <Button
+            href="/"
+            node="a"
+            waves="light"
+            className="indigo"
+            style={{marginLeft: "10%"}}
+            >Home
+            </Button>
           </li>
           <li className="nav-item">
-          <Button
-          href="/Products"
-          node="a"
-          waves="light"
-          className="indigo"
-          style={{marginLeft: "5%"}}
-          >Products
-          </Button>
+            <Button
+            href="/Products"
+            node="a"
+            waves="light"
+            className="indigo"
+            style={{marginLeft: "5%"}}
+            >Products
+            </Button>
           </li>
           <li className="nav-item">
-          <Button
-          href="/Contact"
-          node="a"
-          waves="light"
-          className="indigo"
-          style={{marginLeft: "5%"}}
-          >Contact Us
-          </Button>
+            <Button
+            href="/Contact"
+            node="a"
+            waves="light"
+            className="indigo"
+            style={{marginLeft: "5%"}}
+            >Contact Us
+            </Button>
           </li>
           <li className="nav-item">
-          <Button
-          href="/Login"
-          node="a"
-          waves="light"
-          className="indigo"
-          style={{marginLeft: "5%"}}
-          >Login/Signup
-          </Button>
+            <Button
+            href="/Login"
+            node="a"
+            waves="light"
+            className="indigo"
+            style={{marginLeft: "5%"}}
+            >Login/Signup
+            </Button>
           </li>
         </ul>
-        src={logo} 
-        alt="logo"
-        />
+        </Col>
+        <Col s={2} style={{verticalAlign:"middle"}}>
+          <img 
+          style={{float: "right", marginRight:"2%", width:"auto", height:70}} 
+          src={logo} 
+          alt="logo"
+          />
         </Col>
       </div>
     </nav>

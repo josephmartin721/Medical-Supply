@@ -23,7 +23,7 @@ const Login = () => {
       email: formObject.username, 
       password: formObject.password,
     })
-      .then(res => res.redirect("/home"))
+      .then(res => res.redirect("/"))
       .catch(err => setErrorMessage(err.message))
     }
   };
