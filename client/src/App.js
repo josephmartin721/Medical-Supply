@@ -25,7 +25,6 @@ function App() {
         </Route>
         <Route exact path="/login">
           {loggedIn ? <Redirect to="/" /> : <Login setLoggedIn={setLoggedIn} />}
-          {/* <Login setLoggedIn /> */}
         </Route>
         <Route exact path="/register">
           <Register />
