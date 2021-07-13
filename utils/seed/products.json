@@ -1,42 +1,49 @@
 [
     {
-        "image": "https://previews.dropbox.com/p/thumb/ABOtyzMUOx0x1KF6hcfJBhNfGt-IY3LWxoZP7YPAl5X6MpuHqHRb2zErAF29zflpD7Ie4frNmrcLRlw3dcAGxOM0WDeq5CGZKYfogSiIzxGwgzNHawYrLhLp4dZSYUsqstHPaC1UP4eA_abd4GtSD6m02USsbGTUrs0u2QlQhnOTlnpbw-yKNggzURC3L03bXDCduPejxp1XfQoV48-YsULtVse_ijohMLixbewjCefmgSO18Jy-z_SYxYDE9sLRQbKL2Whpjk5ISdCvbhWGQs_VI1xiYbmQrw2X6Kv9dRt_fJcY-8pIMIo5eubwc0mo2slfeoothvlMEaCzSt-gAwpvS83RlJZB6MEn2OYUaOne6w/p.png?fv_content=true&size_mode=5",
+        "image": "https://via.placeholder.com/150",
         "name": "Total Image",
-        "slug": "3D Image guidance",
+        "slug": "total-iamge",
+        "medicalSpecialtyDescription": "3D Image guidance",
         "description": "Innovative 3D Navigation – This is a real-time, three-dimensional navigation system for ENT procedures performed in the operating room and or ENT office. The electromagnetic image-guided navigation system is used for endoscopic sinus procedures and surgeries like Balloon Sinuplasty which treats chronic sinusitis. This device incorporates microsensor technology, innovative tracking hardware and software tools to enable precise placement of surgical instruments and devices relative to the patient’s preoperative CT scan.",
-        "use": "Various padded components attach to the patient’s head and emit an electromagnetic field with magnetic sensors that the console used to create 3D imaging. Padding attaches to chair doubling as a padded head/neck rest, and additional sensory padding is placed on the forehead. A Registration Probe is used to trace the pre-acquired image to the patient’s head at the beginning of the procedure and mark corresponding points. Workstation also comes with console, instrument hub, and Instrument Adapter acting as physical connection interface between the instrument Hub and the navigated surgical device.",
+
+        "usage": "Various padded components attach to the patient’s head and emit an electromagnetic field with magnetic sensors that the console used to create 3D imaging. Padding attaches to chair doubling as a padded head/neck rest, and additional sensory padding is placed on the forehead. A Registration Probe is used to trace the pre-acquired image to the patient’s head at the beginning of the procedure and mark corresponding points. Workstation also comes with console, instrument hub, and Instrument Adapter acting as physical connection interface between the instrument Hub and the navigated surgical device.",
+
         "benefits": "This is the best device on the market today hands down regarding procedural visual aid. This state-of-the-art device provides visual assurance without invasive techniques. Complete sinus surgery in office using minimal procedural technique trusting this device to enable you to clearly operate by full visual capacity."
     },
     {
-        "image": "https://previews.dropbox.com/p/thumb/ABOm474S2OeUjMQmziGq8JTsEHeteGWErhjjnAOs2opwhWyev8ozNqTiGQEMtnS2CZBfLrNLDYE9fbkXqhNWnA8qkVX-GVc4CsfNPO0O2TSH1ipBK1EBCcc79fATWlvbin8UFRClJW9Y2gDpBS2446F13ViOzFSGrPZEUILiiLd4126tIjqO-3U9VmJgVNPq9FB6kWSjMZw7zFltedjPw6hMdpm_aEy0EfqHYrbwoczC9_JpqDjURtfsPP4Or901uNVpYTFcKS7lr1ctU2mOjGAFXdaaW6qVmrVxa_kAKyyCJSKX1owo_gBPG0712xWcYRwcGHzXNaBGBLe3ObLVyu8drcC1Y6zbzkI7cUt_FQd-MQ/p.png?fv_content=true&size_mode=5",
+        "image": "https://via.placeholder.com/150",
         "name": "Disposable BSS – Balloon Sinuplasty System",
-        "slug": "Balloon Sinuplasty System",
+        "slug": "disposable-bss-balloon-sinuplasty-system",
+        "medicalSpecialtyDescription": "Balloon Sinuplasty System",
         "description": "Hand-held balloon device that inflates inside the sinus for one-time access for dilation and irrigation. This device is intended to provide a means to access the sinus space and illuminate within and transilluminate across nasal and sinus structures to clear the sinuses. ",
-        "use": "BSS is able to independently advance or retract integrated wire and balloon when in use. Device is inserted into desired location, then integrated light output is activated and balloon is inflated. Integrated irrigation system can be activated as well.",
+        "usage": "BSS is able to independently advance or retract integrated wire and balloon when in use. Device is inserted into desired location, then integrated light output is activated and balloon is inflated. Integrated irrigation system can be activated as well.",
         "benefits": "Precise, single-handed control of sinus access, plus distal irrigation jets integrated into the tip of the balloon catheter. Guide tip release button, suction system, balloon guard, and gripping features."
     },
     {
-        "image": "https://previews.dropbox.com/p/thumb/ABN0eBhn1i1IQ-_Q1Ab4oEa48R76I4zeGR0UzT0U9Zc5nCgeIRGhq9U5c_G9gJfSUYC4DQWJ9mHvNSJfh6XW_RkQoEZxB0tF8zput3zvuMOrlRdAWZzEMlVJSKm9W7_exf-3RCardj49nXtaFPZW5F__-jjHJYW493wR7GWWrxg9hR4zHJQ7Ls9IgbJG0wSZuZzEJ_BbbyUqaZrlYe_YkACv-DigBIxZYQAhpSHeguVL1--zY9kOjumAvDfoSRj3TpXcGFhv1HAQ-a5jMlPhm74E_Wi0stvWVJGObWlJUZB0KAAPS_wjiJVYLimb9xFmx1IewzbLIbZIiNpohtl0jouduK0H3yioHKDxzyBvUswXpg/p.png?fv_content=true&size_mode=5",
+        "image": "https://via.placeholder.com/150",
         "name": "HDS - Headroom Dilation System",
-        "slug": "Excise bone and soft tissue",
+        "slug": "hds-headroom-dilation-system",
+        "medicalSpecialtyDescription": "Excise bone and soft tissue",
         "description": "Excise Ethmoid sinus",
-        "use": "Best used for ethmoid punches, this device is designed to excise bone and soft tissue from the ethmoid sinus. Can be used in both in office and operating room scenarios. ",
+        "usage": "Best used for ethmoid punches, this device is designed to excise bone and soft tissue from the ethmoid sinus. Can be used in both in office and operating room scenarios. ",
         "benefits": "Removes bone and soft tissue out of the way when performing procedures, enabling air and mucus flow."
     },
     {
-        "image": "https://previews.dropbox.com/p/thumb/ABM4ZEPJd7Z55R6cLqjCGETJfFz9D3CyE40o1gS_ntdseoIgHaooFUp10onQJezIaojd762MgFF2n9_HwE5cI3w1qL7jjHTKbnke5G2AeIsbYqBIK59k9WVO98iilYSoaQTLOCXCF3jwolNvoXsVS4TOAiGYh12rsbrmn5hws3fsePpj9YCEXYPxPiimo43fEvnEF3AONgB6D9qtLOuzmlhedzKC7U-ySQV1326FFX5brXYg1NFVii6iKG6bOLyzwHbuzwkGR55WGzLq5oAa_oFb0PxVAs5lBuVf8DsvuXH2ijFEl5yRLQu6vu92k-KQuQq1G3WQpQQS7Pn6kHpOFYL-Do92Q4kU9ht--BbDvcO--A/p.png?fv_content=true&size_mode=5",
+        "image": "https://via.placeholder.com/150",
         "name": "Clearview",
-        "slug": "Nasal Endoscope",
+        "slug": "clearview",
+        "medicalSpecialtyDescription": "Nasal Endoscope",
         "description": "Multi-angular Endoscope with adjustable light & miniature camera lens at the end, specifically designed for viewing inside the nasal cavity and sinuses.",
-        "use": "The end of the device adjusts 10- 90° for wide angle maximum viewing flexibility. The endoscope is inserted into the nasal cavity and the user looks through the eye piece with focus adjusting capabilities. Our lens achieves the clearest view in the industry using high resolution technology.",
+        "usage": "The end of the device adjusts 10- 90° for wide angle maximum viewing flexibility. The endoscope is inserted into the nasal cavity and the user looks through the eye piece with focus adjusting capabilities. Our lens achieves the clearest view in the industry using high resolution technology.",
         "benefits": "Clear, precise, magnified view of the nasal cavity with high-definition digital imagery."
     },
     {
-        "image": "https://previews.dropbox.com/p/thumb/ABP3QUF5kycZHmtlaFN76c4PYpy8nY81NQk4FXC8_Qfz11BDAwU4e67u9QYR41tNktyy4UnQrMM6-_rrsv1ohZyGL7ukckq9KrHRrjig-pzqM48xv4l70vt9-JHAllPNFpfrTNtHnhxd9jZi7poNukO2z3cMfojcLI2NQp4YxckySCvXq2qBnk1jABuo7nZagsqUffxF3XArWFm78wnAocYELjevZhppks-12xsSXmemXrw6RSvGXmHDPlZYxyAS-BrmJF0D3WZ-u3lE9UNNxy8YiPgXzIPa9noi4rnoE9QHiFaIV-qjwkQsQ5iXRdWKMf9ad3uKC3__e-eKwJKjrMTlytU163p8A6DkFsVC1-fFBA/p.png?fv_content=true&size_mode=5",
+        "image": "https://via.placeholder.com/150",
         "name": "Rhinofreeze",
-        "slug": "Nasal Cavity Cryotherapy",
+        "slug": "rhinofreeze",
+        "medicalSpecialtyDescription": "Nasal Cavity Cryotherapy",
         "description": "Cryotherapy to the nose. Cold temperatures going directly to the nerves inside the nose to alleviate symptoms. Minimally invasive and targets the source of symptoms for lasting relief. Available in-office, minimal recovery time and post-treatment care, and often times provides long-lasting symptom relief.",
-        "use": "Device is place inside the nasal passage towards the back of the nasal cavity against the membrane. When the cold temperature hits the out-of-balance nerves, the nerve signals are temporarily interrupted. The nerves are no longer sending signals to the brain to produce drip, run, and swell.",
+        "usage": "Device is place inside the nasal passage towards the back of the nasal cavity against the membrane. When the cold temperature hits the out-of-balance nerves, the nerve signals are temporarily interrupted. The nerves are no longer sending signals to the brain to produce drip, run, and swell.",
         "benefits": "Chronic Rhinitis is frequent inflammation of the nose with symptoms such as a runny nose, nasal congestion, and post-nasal drip. When symptoms are not severe enough to require surgery, Rhinofreeze provides an alternative to long lasting symptom relief."
     }
-]
+    ]
