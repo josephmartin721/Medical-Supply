@@ -33,20 +33,3 @@ body {
   main {
     flex: 1 0 auto;
   }
-
-  #idDes {
-      margin-top: 1%;
-      margin-left: 15%;
-  }
-
-  #usage {
-     font-size: 20px;
-  }
-
-  #benefits {
-      font-size: 20px;
-  }
-
-#name {
-    font-size: 30px;
-}
