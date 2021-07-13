@@ -29,8 +29,8 @@ const productSchema = new Schema({
     medicalSpecialtyDescription: {
         type: String
     },
-    images: {
-        type: [{ type: String }]
+    image: {
+        type: String
     },
     usage: {
         type: String
@@ -53,8 +53,6 @@ const productSchema = new Schema({
         type: [{ type: String }]
     }
 });
-
-// TODO: middleware to update Shop products on creation and deletion
 
 const Product = mongoose.model("Product", productSchema);
 

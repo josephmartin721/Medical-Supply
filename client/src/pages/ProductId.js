@@ -1,9 +1,10 @@
 import React, { Component, useEffect, useState } from "react";
 import axios from "axios";
-import { Row, Col, Card, CardTitle, Button, Container } from "react-materialize";
+import { Row, Col, Card, CardTitle, Button, Container, Icon } from "react-materialize";
 import { Link, useParams } from "react-router-dom";
 import background from "../images/background.png";
 import API from "../utils/API";
+import "./style.css";
 
 
 const ProductId = (props) => { 
@@ -21,28 +22,41 @@ const ProductId = (props) => {
     },[])
     return (
         <div>
-        <div style={{backgroundImage: `url(${background})`, height: 150}}>
-        </div>
-            <Row>
-                <Col>
-                <Card>
-                    {data.name}
-                </Card>
-                </Col>
+            <div style={{backgroundImage: `url(${background})`, height: 150}}></div>
+            <Row id="idDes">
+                <Col
+                 m={10}
+                    s={12}
+                         >
+                        <Card
+                        closeIcon={<Icon>close</Icon>}
+                        header={<CardTitle id="pic" image="https://materializecss.com/images/sample-1.jpg"/>}
+                        horizontal
 
-                <Col>
-                <Card>
-                    <header>{data.name}</header>
-                    <p>{data.description}</p>
-                </Card>
-
-
-                <Card>
-                        {data.use}
-                        {data.benefits}
+                            >
+                        <p id="name">{data.name}</p>
+                        <br/>
+                        <p>{data.description}</p>
                         </Card>
                 </Col>
-                    
+
+                <Col
+                  m={10}
+                    s={12}
+                        >
+                        <Card
+                          actions={[
+                          <Link to="/contact" style={{ color:"indigo" }}>Schedule a Meeting</Link>
+                          ]}
+      
+                          >
+                        <p id="usage">Usage:</p> 
+                        <p>{data.use}</p>
+                        <br/>
+                        <p id="benefits">Benefits:</p>
+                        <p>{data.benefits}</p>
+                        </Card>
+                  </Col>
             </Row>
         </div>
         
