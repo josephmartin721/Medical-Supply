@@ -7,14 +7,14 @@ module.exports = {
             const userData = await db.User.create(req.body);
             
             req.session.save(() => {
-              req.session.user_id = userData.id;
-              req.session.logged_in = true;
+              req.session.userId = userData.id;
+              req.session.loggedIn = true;
         
               res.status(201).end();
             });
           } catch (err) {
             console.log(err);
-            res.status(400).json(err);
+            res.status(500).json(err);
           }
     },
     login: async function(req, res) {
@@ -23,29 +23,29 @@ module.exports = {
               
             if (!userData) {
               res
-                .status(400)
+                .status(401)
                 .json({ message: 'Incorrect username or password, please try again' });
               return;
             }
         
-            const validPassword = await checkPassword(req.body.password, userData.password);
+            const validPassword = checkPassword(req.body.password, userData.password);
         
             if (!validPassword) {
               res
-                .status(400)
+                .status(401)
                 .json({ message: 'Incorrect username or password, please try again' });
               return;
             }
         
             req.session.save(() => {
-              req.session.user_id = userData.id;
-              req.session.logged_in = true;
+              req.session.userId = userData.id;
+              req.session.loggedIn = true;
         
               res.status(200).end();
             });
         
           } catch (err) {
-            res.status(400).json(err);
+            res.status(500).json(err);
           }
     },
     logout: function(req, res) {
@@ -54,7 +54,7 @@ module.exports = {
               res.status(204).end();
             });
           } else {
-            res.status(404).end();
+            res.status(500).end();
           }
     }
 }
