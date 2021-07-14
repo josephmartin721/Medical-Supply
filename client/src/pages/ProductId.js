@@ -21,7 +21,7 @@ const ProductId = (props) => {
         fetchData()
     },[])
     return (
-        <div style={{backgroundColor:"#260688"}}>
+        <div style={{backgroundImage: `url(${background})`}}>
             <div style={{backgroundImage: `url(${background})`, height: 150}}></div>
             <Row id="idDes">
                 <Col
