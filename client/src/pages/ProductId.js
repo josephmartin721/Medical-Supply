@@ -21,19 +21,18 @@ const ProductId = (props) => {
         fetchData()
     },[])
     return (
-        <div>
+        <div style={{backgroundColor:"#260688"}}>
             <div style={{backgroundImage: `url(${background})`, height: 150}}></div>
             <Row id="idDes">
                 <Col
-                 m={10}
+                 m={8}
                     s={12}
                          >
                         <Card
                         closeIcon={<Icon>close</Icon>}
-                        header={<CardTitle id="pic" image="https://materializecss.com/images/sample-1.jpg"/>}
+                        header={<CardTitle image={data.image}/>}
                         horizontal
-
-                            >
+                        >
                         <p id="name">{data.name}</p>
                         <br/>
                         <p>{data.description}</p>
@@ -41,7 +40,7 @@ const ProductId = (props) => {
                 </Col>
 
                 <Col
-                  m={10}
+                  m={8}
                     s={12}
                         >
                         <Card
@@ -51,7 +50,7 @@ const ProductId = (props) => {
       
                           >
                         <p id="usage">Usage:</p> 
-                        <p>{data.use}</p>
+                        <p>{data.usage}</p>
                         <br/>
                         <p id="benefits">Benefits:</p>
                         <p>{data.benefits}</p>
