@@ -20,11 +20,14 @@ function HomeHeader() {
             }}
         />
         <Jumbotron>
-            <h1 style={{color:"white"}}>About Us</h1>
-            <h4 style={{color:"white"}}>In 2021, our company started out....</h4>
-            <div style={{marginTop: 100}}>
+            <h1 style={{color:"white", fontSize:"6vw"}}>About Us</h1>
+            <h4 style={{color:"white", fontSize:"2.3vw"}}>
+                In 2021, our company started out with one goal in mind - To offer state of the art specialty ENT products
+                to providers in search of cutting edge equipment that will elevate their capabilities to provide the
+                highest quality of care.
+            </h4>
             <Carousel
-            carouselId="Carousel-2"
+            carouselId="Carousel-0"
             images={[
                 `${caro01}`,
                 `${caro02}`,
@@ -34,18 +37,23 @@ function HomeHeader() {
                 `${caro06}`
             ]}
             options={{
-                dist: -100,
+                dist: -50,
                 duration: 200,
                 fullWidth: false,
-                indicators: false,
+                indicators: true,
                 noWrap: false,
                 numVisible: 5,
                 onCycleTo: null,
-                padding: 0,
+                padding: -100,
                 shift: 0
             }}
             />
-            </div>
+            <p style={{color:"white", fontSize:"2.1vw"}}>
+                ENT Technics offers specialty medical equipment designed to meet the needs of 
+                practitioners specializing in the diagnosis of ENT disorders. Our most highly innovative product Total 
+                Image consists of electromagnetic image-guided navigation used for endoscopic sinus procedures and surgeries.
+            </p>
+            
         </Jumbotron>
         <Parallax
             image={<img alt="" src={pictwo} style={{width: "auto", height: "auto"}}/>}

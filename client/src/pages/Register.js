@@ -33,14 +33,14 @@ const Register = () => {
         phone: formObject.phone,
         email: formObject.email,
       })
-        .then(res => res.redirect("/home"))
-        .catch(err => {setErrorMessage({errorMessage: err.message});})
+        .then(res => res.redirect([200], "/login"))
+        .catch(err => {setErrorMessage(errorMessage, err.message);})
       }
   };
 
   return (
     <Col xl={12} s={12}>
-      <div className="section" style={{backgroundImage: `url(${background})`, height: 100}}>
+      <div className="section" style={{backgroundImage: `url(${background})`, height: 150}}>
       </div>
       <Row className="center" style={{backgroundImage: `url(${background})`}}>
         <Col s={2}></Col>
