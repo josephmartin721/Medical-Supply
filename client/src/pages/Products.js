@@ -29,7 +29,9 @@ const Products = (props) => {
           <Card
           >
           <div className="card-image">
-            <img id="pic" src={product.image} alt="medical device"/>
+            <img id="pic" src={product.image} alt="medical device" 
+            style={{width: "auto", height: "auto", maxWidth: "100%", maxHeight: "280px"}}
+            />
           </div>
           <h5 style={{color:"#260688"}}>{product.name}</h5>
           <p id="medSpecialty">{product.medicalSpecialtyDescription}</p>
