@@ -34,15 +34,15 @@ const Products = (props) => {
               width: "auto", height: "auto", maxWidth: "100%", maxHeight: "280px"}}
             />
           </div>
-          <h5 style={{color:"#260688"}}>{product.name}</h5>
-          <p id="medSpecialty">{product.medicalSpecialtyDescription}</p>
+          <h5 style={{color:"#260688", fontSize:"1.8vw"}}>{product.name}</h5>
+          <p id="medSpecialty" style={{fontSize:"1.6vw"}}>{product.medicalSpecialtyDescription}</p>
           <br/>
           <Link to={`/products/${product._id}`}>
               <Button
               node="button"
               waves="light"
               className="indigo btn-small"
-              style={{marginBottom: "5px"}}
+              style={{marginBottom: "5px", fontSize:"1.4vw"}}
               >
               View
               </Button>
@@ -53,6 +53,7 @@ const Products = (props) => {
               node="button"
               waves="light"
               className="indigo btn-small"
+              style={{fontSize:"1.4vw"}}
               >
               Schedule a Meeting
               </Button>
