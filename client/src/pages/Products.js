@@ -28,9 +28,10 @@ const Products = (props) => {
           <Col s={5} className="center" style={{margin: "4%"}}>
           <Card
           >
-          <div className="card-image">
+          <div className="card-image" style={{align:"center"}}>
             <img id="pic" src={product.image} alt="medical device" 
-            style={{width: "auto", height: "auto", maxWidth: "100%", maxHeight: "280px"}}
+            style={{marginLeft: "auto", marginRight: "auto", display: "block",
+              width: "auto", height: "auto", maxWidth: "100%", maxHeight: "280px"}}
             />
           </div>
           <h5 style={{color:"#260688"}}>{product.name}</h5>
