@@ -1,6 +1,6 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Row, Col, Card, CardTitle, Button, Container, Icon } from "react-materialize";
+import { Row, Col, Card, CardTitle,Icon } from "react-materialize";
 import { Link, useParams } from "react-router-dom";
 import background from "../images/background.png";
 import API from "../utils/API";
@@ -32,9 +32,9 @@ const ProductId = (props) => {
                     header={<CardTitle image={data.image}/>}
                     horizontal
                     >
-                    <p id="name">{data.name}</p>
+                    <p id="name" style={{fontSize:"1.8vw"}}>{data.name}</p>
                     <br/>
-                    <p>{data.description}</p>
+                    <p style={{fontSize:"1.6vw"}}>{data.description}</p>
                     </Card>
                 </Col>
                 <Col s={2}></Col>
@@ -47,13 +47,12 @@ const ProductId = (props) => {
                         actions={[
                         <Link to="/contact" style={{ color:"indigo" }}>Schedule a Meeting</Link>
                         ]}
-    
                         >
-                    <p id="usage">Usage:</p> 
-                    <p>{data.usage}</p>
+                    <p id="usage" style={{fontSize:"1.8vw"}}>Usage:</p> 
+                    <p style={{fontSize:"1.6vw"}}>{data.usage}</p>
                     <br/>
-                    <p id="benefits">Benefits:</p>
-                    <p>{data.benefits}</p>
+                    <p id="benefits" style={{fontSize:"1.8vw"}}>Benefits:</p>
+                    <p style={{fontSize:"1.6vw"}}>{data.benefits}</p>
                     </Card>
                 </Col>
                 <Col s={2}></Col>
