@@ -23,39 +23,41 @@ const ProductId = (props) => {
     return (
         <div style={{backgroundImage: `url(${background})`}}>
             <div style={{backgroundImage: `url(${background})`, height: 150}}></div>
-            <Row id="idDes">
-                <Col
-                 m={8}
-                    s={12}
-                         >
-                        <Card
-                        closeIcon={<Icon>close</Icon>}
-                        header={<CardTitle image={data.image}/>}
-                        horizontal
-                        >
-                        <p id="name">{data.name}</p>
-                        <br/>
-                        <p>{data.description}</p>
-                        </Card>
+            <Row>
+                <Row>
+                <Col s={2}></Col>
+                <Col s={8}>
+                    <Card
+                    closeIcon={<Icon>close</Icon>}
+                    header={<CardTitle image={data.image}/>}
+                    horizontal
+                    >
+                    <p id="name">{data.name}</p>
+                    <br/>
+                    <p>{data.description}</p>
+                    </Card>
                 </Col>
+                <Col s={2}></Col>
+                </Row>
 
-                <Col
-                  m={8}
-                    s={12}
+                <Row>
+                <Col s={2}></Col>
+                <Col s={8}>
+                    <Card
+                        actions={[
+                        <Link to="/contact" style={{ color:"indigo" }}>Schedule a Meeting</Link>
+                        ]}
+    
                         >
-                        <Card
-                          actions={[
-                          <Link to="/contact" style={{ color:"indigo" }}>Schedule a Meeting</Link>
-                          ]}
-      
-                          >
-                        <p id="usage">Usage:</p> 
-                        <p>{data.usage}</p>
-                        <br/>
-                        <p id="benefits">Benefits:</p>
-                        <p>{data.benefits}</p>
-                        </Card>
-                  </Col>
+                    <p id="usage">Usage:</p> 
+                    <p>{data.usage}</p>
+                    <br/>
+                    <p id="benefits">Benefits:</p>
+                    <p>{data.benefits}</p>
+                    </Card>
+                </Col>
+                <Col s={2}></Col>
+                </Row>
             </Row>
         </div>
         
