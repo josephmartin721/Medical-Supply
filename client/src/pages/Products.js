@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Row, Col, Card, CardTitle, Button } from "react-materialize";
+import { Row, Col, Card, Button } from "react-materialize";
 import background from "../images/background.png";
 // Commented out for now - needs to be brought back in when API call is functioning
-//  import API from "../utils/API";
+ import API from "../utils/API";
 // This is just to mock an API call and should be deleted when the true API call is functioning
-import products from "./products.json";
+// import products from "./products.json";
 
 const Products = (props) => {
   // Commented out for now - needs to be brought back in when API call is functioning
-  // const [productState, setProductState] = useState([]);
+  const [productState, setProductState] = useState([]);
 
-  // useEffect(() => {
-  //   API.products().then((res) => {
-  //     setProductState(res.data)
+  useEffect(() => {
+    API.products().then((res) => {
+      setProductState(res.data)
       
-  //   }) .catch(err => console.log(err));
-  // }, []);
+    }) .catch(err => console.log(err));
+  }, []);
 
   return (
     <div>
@@ -24,7 +24,7 @@ const Products = (props) => {
       </div>
       <Row style={{backgroundColor:"#260688"}}>
         {/* When API call is functioning, replace "products" with "productState" */}
-        {products.length >0 ? products.map(product => (
+        {productState.length >0 ? productState.map(product => (
           <Col s={5} className="center" style={{margin: "4%"}}>
           <Card
           >
