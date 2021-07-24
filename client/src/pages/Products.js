@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Row, Col, Card, CardTitle, Button } from "react-materialize";
+import { Row, Col, Card, Button } from "react-materialize";
 import background from "../images/background.png";
 // Commented out for now - needs to be brought back in when API call is functioning
  import API from "../utils/API";
 // This is just to mock an API call and should be deleted when the true API call is functioning
-// import MedProducts from "./products.json";
+// import products from "./products.json";
 
 const Products = (props) => {
   // Commented out for now - needs to be brought back in when API call is functioning
@@ -28,18 +28,21 @@ const Products = (props) => {
           <Col s={5} className="center" style={{margin: "4%"}}>
           <Card
           >
-          <div className="card-image">
-            <img id="pic" src={product.image} alt="medical device"/>
+          <div className="card-image" style={{align:"center"}}>
+            <img id="pic" src={product.image} alt="medical device" 
+            style={{marginLeft: "auto", marginRight: "auto", display: "block",
+              width: "auto", height: "auto", maxWidth: "100%", maxHeight: "280px"}}
+            />
           </div>
-          <h5 style={{color:"#260688"}}>{product.name}</h5>
-          <p id="medSpecialty">{product.medicalSpecialtyDescription}</p>
+          <h5 style={{color:"#260688", fontSize:"1.8vw"}}>{product.name}</h5>
+          <p id="medSpecialty" style={{fontSize:"1.6vw"}}>{product.medicalSpecialtyDescription}</p>
           <br/>
           <Link to={`/products/${product._id}`}>
               <Button
               node="button"
               waves="light"
               className="indigo btn-small"
-              style={{marginBottom: "5px"}}
+              style={{marginBottom: "5px", fontSize:"1.4vw"}}
               >
               View
               </Button>
@@ -50,6 +53,7 @@ const Products = (props) => {
               node="button"
               waves="light"
               className="indigo btn-small"
+              style={{fontSize:"1.4vw"}}
               >
               Schedule a Meeting
               </Button>
